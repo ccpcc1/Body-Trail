@@ -1,0 +1,296 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
+MERGED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:2:1-48:12
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\5adfba562fd83571a21d2f63cc380d80\AndroidManifest.xml:17:1-22:12
+MERGED from [:CordovaLib] C:\Users\user\Desktop\BodyTrail\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:20:1-27:12
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\3ed55a0061b107adddee7473f338000e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\eb7e752f496bbc5d044b629f12409cd0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\6fe5903e49dcba8cc6a857a39dd6c490\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\d003f28fa488dd61c2bc4a81f48b5d95\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\543cee392a18a1e46c40cd0582f15540\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\74cb99401bee40ce576683a9f3077f53\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\857f5556cf3d8426550d6b9eba0e3c63\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\739417444410084bc55d2aa3b91fb32b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\6b1ae11c41458d62ec4507f0a4b7d2b1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\7086a2823f08899c7ca2766c6c663844\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\9a9f37ba5ebfe9d266edbd91cee13394\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\53f9b9142ead616a586efbb26e937bbf\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\d9bfb6242c6a3bc8f01c64ff59b4611a\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d10e07cc9bcbaf7a65b9c1f54cec010f\AndroidManifest.xml:17:1-25:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\2111e6e25a7ca6203f29ad87ae0831d1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\64f138ecb7ba189d5d09164964e9233b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\767b91ab02548c76aa479b9bc1f30a40\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\630e36c270116de61d46c5381d7965e4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\5b070c6d19ac6b48592b25bd471f9eeb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\16eb6204c6729fa10b406a070a79217b\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\ea31d1349ed09f7a7571d58959ee402d\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\9e9be0d436553f016c3f1022279145ac\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\d34b15879bc5aec3696ec3d06ee834f5\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\f1d2e2d0169345f95e4f10c7a4e158e3\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
+	package
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:2:102-135
+		INJECTED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:2:74-101
+		INJECTED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml
+	android:hardwareAccelerated
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:2:11-45
+	xmlns:android
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:2:136-194
+	android:versionCode
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:2:46-73
+		INJECTED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml
+supports-screens
+ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:3:5-191
+	android:largeScreens
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:3:49-76
+	android:smallScreens
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:3:132-159
+	android:normalScreens
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:3:77-105
+	android:xlargeScreens
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:3:160-188
+	android:resizeable
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:3:106-131
+	android:anyDensity
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:3:23-48
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:4:22-64
+application
+ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:5:5-23:19
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\d9bfb6242c6a3bc8f01c64ff59b4611a\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\d9bfb6242c6a3bc8f01c64ff59b4611a\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d10e07cc9bcbaf7a65b9c1f54cec010f\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d10e07cc9bcbaf7a65b9c1f54cec010f\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\d9bfb6242c6a3bc8f01c64ff59b4611a\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:5:114-140
+	android:label
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:5:81-113
+	android:hardwareAccelerated
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:5:18-52
+	android:icon
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:5:53-80
+activity#com.developer.bodytrail.MainActivity
+ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:6:9-11:20
+	android:label
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:6:97-134
+	android:launchMode
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:6:135-165
+	android:windowSoftInputMode
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:6:257-299
+	android:configChanges
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:6:19-96
+	android:theme
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:6:194-256
+	android:name
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:6:166-193
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:7:13-10:29
+	android:label
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:7:28-65
+action#android.intent.action.MAIN
+ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:8:17-69
+	android:name
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:8:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:9:17-77
+	android:name
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:9:27-74
+receiver#de.appplant.cordova.plugin.localnotification.TriggerReceiver
+ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:12:9-122
+	android:exported
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:12:19-43
+	android:name
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:12:44-119
+receiver#de.appplant.cordova.plugin.localnotification.ClearReceiver
+ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:13:9-120
+	android:exported
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:13:19-43
+	android:name
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:13:44-117
+activity#de.appplant.cordova.plugin.localnotification.ClickActivity
+ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:14:9-203
+	android:launchMode
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:14:44-79
+	android:exported
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:14:19-43
+	android:theme
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:14:154-200
+	android:name
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:14:80-153
+receiver#de.appplant.cordova.plugin.notification.TriggerReceiver
+ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:15:9-117
+	android:exported
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:15:19-43
+	android:name
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:15:44-114
+receiver#de.appplant.cordova.plugin.notification.ClearReceiver
+ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:16:9-115
+	android:exported
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:16:19-43
+	android:name
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:16:44-112
+receiver#de.appplant.cordova.plugin.localnotification.RestoreReceiver
+ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:17:9-21:20
+	android:exported
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:17:19-43
+	android:name
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:17:44-119
+intent-filter#android.intent.action.BOOT_COMPLETED
+ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:18:13-20:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:19:17-79
+	android:name
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:19:25-76
+activity#de.appplant.cordova.plugin.notification.ClickActivity
+ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:22:9-198
+	android:launchMode
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:22:44-79
+	android:exported
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:22:149-195
+	android:name
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:22:80-148
+uses-sdk
+ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:24:5-74
+INJECTED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:24:5-74
+MERGED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:7:5-9:41
+MERGED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\5adfba562fd83571a21d2f63cc380d80\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\5adfba562fd83571a21d2f63cc380d80\AndroidManifest.xml:20:5-44
+MERGED from [:CordovaLib] C:\Users\user\Desktop\BodyTrail\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:25:5-44
+MERGED from [:CordovaLib] C:\Users\user\Desktop\BodyTrail\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:25:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\3ed55a0061b107adddee7473f338000e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\3ed55a0061b107adddee7473f338000e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\eb7e752f496bbc5d044b629f12409cd0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\eb7e752f496bbc5d044b629f12409cd0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\6fe5903e49dcba8cc6a857a39dd6c490\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\6fe5903e49dcba8cc6a857a39dd6c490\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\d003f28fa488dd61c2bc4a81f48b5d95\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\d003f28fa488dd61c2bc4a81f48b5d95\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\543cee392a18a1e46c40cd0582f15540\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\543cee392a18a1e46c40cd0582f15540\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\74cb99401bee40ce576683a9f3077f53\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\74cb99401bee40ce576683a9f3077f53\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\857f5556cf3d8426550d6b9eba0e3c63\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\857f5556cf3d8426550d6b9eba0e3c63\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\739417444410084bc55d2aa3b91fb32b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\739417444410084bc55d2aa3b91fb32b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\6b1ae11c41458d62ec4507f0a4b7d2b1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\6b1ae11c41458d62ec4507f0a4b7d2b1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\7086a2823f08899c7ca2766c6c663844\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\7086a2823f08899c7ca2766c6c663844\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\9a9f37ba5ebfe9d266edbd91cee13394\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\9a9f37ba5ebfe9d266edbd91cee13394\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\53f9b9142ead616a586efbb26e937bbf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\53f9b9142ead616a586efbb26e937bbf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\d9bfb6242c6a3bc8f01c64ff59b4611a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\d9bfb6242c6a3bc8f01c64ff59b4611a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d10e07cc9bcbaf7a65b9c1f54cec010f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d10e07cc9bcbaf7a65b9c1f54cec010f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\2111e6e25a7ca6203f29ad87ae0831d1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\2111e6e25a7ca6203f29ad87ae0831d1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\64f138ecb7ba189d5d09164964e9233b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\64f138ecb7ba189d5d09164964e9233b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\767b91ab02548c76aa479b9bc1f30a40\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\767b91ab02548c76aa479b9bc1f30a40\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\630e36c270116de61d46c5381d7965e4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\630e36c270116de61d46c5381d7965e4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\5b070c6d19ac6b48592b25bd471f9eeb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\5b070c6d19ac6b48592b25bd471f9eeb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\16eb6204c6729fa10b406a070a79217b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\16eb6204c6729fa10b406a070a79217b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\ea31d1349ed09f7a7571d58959ee402d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\ea31d1349ed09f7a7571d58959ee402d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\9e9be0d436553f016c3f1022279145ac\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\9e9be0d436553f016c3f1022279145ac\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\d34b15879bc5aec3696ec3d06ee834f5\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\d34b15879bc5aec3696ec3d06ee834f5\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\f1d2e2d0169345f95e4f10c7a4e158e3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\f1d2e2d0169345f95e4f10c7a4e158e3\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:24:5-74
+	android:targetSdkVersion
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:24:42-71
+	android:minSdkVersion
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:24:15-41
+		INJECTED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:25:5-81
+	android:name
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:25:22-78
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:26:5-81
+	android:name
+		ADDED from C:\Users\user\Desktop\BodyTrail\platforms\android\app\src\main\AndroidManifest.xml:26:22-78
+uses-permission#com.sec.android.provider.badge.permission.READ
+ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:19:5-86
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:19:22-83
+uses-permission#com.sec.android.provider.badge.permission.WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:20:5-87
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:20:22-84
+uses-permission#com.htc.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:23:22-78
+uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
+ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:24:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:24:22-80
+uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:27:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:27:22-85
+uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:28:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:28:22-89
+uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
+ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:31:5-84
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:31:22-81
+uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:34:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:34:22-80
+uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:37:5-91
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:37:22-88
+uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:38:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:38:22-89
+uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:39:5-93
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:39:22-90
+uses-permission#android.permission.READ_APP_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:42:5-73
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:42:22-70
+uses-permission#com.oppo.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:45:5-82
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:45:22-79
+uses-permission#com.oppo.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:46:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.11.aar\5f7f03f98351bdb3e93c28d1b9b345e4\AndroidManifest.xml:46:22-80
