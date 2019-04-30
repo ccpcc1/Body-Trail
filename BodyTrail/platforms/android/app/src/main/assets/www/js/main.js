@@ -11,7 +11,7 @@ function inicio()
 
 function plash()
 {
-	pantallaInicio.className="container-fluid animated rotateInDownRight";
+	pantallaInicio.className="animated rotateInDownRight";
 	splash.className="ocultar";
 }
 
