@@ -1,8 +1,3 @@
-body
-{
-	margin:0px;
-	padding: 0px;
-}
 
 .ocultar{
     display: none;
@@ -16,10 +11,21 @@ body
     max-height: 544px;
 }
 
+
+.pantallas
+{
+    max-width: 320px;
+    min-height: 544px;
+    max-height: 544px;
+    margin:0px;
+}
+
 #barraCarga
 {
     position: relative;
     top: -40px;
+    padding: 0px;
+    margin: 0px;
 }
 
 span

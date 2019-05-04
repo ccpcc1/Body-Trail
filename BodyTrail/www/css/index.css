@@ -1,4 +1,4 @@
-
+/*codigo general*/
 .ocultar{
     display: none;
 
@@ -11,7 +11,6 @@
     max-height: 544px;
 }
 
-
 .pantallas
 {
     max-width: 320px;
@@ -19,7 +18,12 @@
     max-height: 544px;
     margin:0px;
 }
-
+/*Splash screen*/
+#PantallaSplash
+{
+   margin-bottom: -18px;
+}
+    
 #barraCarga
 {
     position: relative;
@@ -28,7 +32,63 @@
     margin: 0px;
 }
 
-span
+/*Pantalla bienvenida*/
+#inicioRapido
 {
-    left: -50%;
+    position: absolute;
+    bottom: 14px;
+    left: 60px;
+}
+
+#btnRegistrar
+{
+    position: absolute;
+    bottom: 54px;
+    left: 30px;
+    max-width: 120px;
+}
+
+#btnIniciar
+{
+    position: absolute;
+    bottom: 54px;
+    right: 30px;
+    max-width: 120px;
+}
+
+#mensajeInicio
+{
+    position: absolute;
+    top: 308px;
+    left: 79px;
+    max-width: 160px;
+}
+#inicioLogo
+{
+    position: absolute;
+    top: 100px;
+    left: 69px;
+    max-width: 200px;
+}
+/**/
+.menu .boton{
+    background-color: #0645aa;
+    border: 1px solid blue;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 40px;
+    border-radius: 8px;
+}
+
+.menu .boton:not(:last-child) {
+    border-right: none; 
+}
+
+.menu .boton:hover {
+    background-color: #3474db;
 }

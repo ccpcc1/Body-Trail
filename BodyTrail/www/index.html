@@ -18,11 +18,64 @@
             <div id="barraCarga"></div>
         </div>
         <div class="ocultar pantallas" id="PantallaInicial">
-            <img src="img/pantalla-bienvenido.jpg" id="img">
+            <img src="img/Pantallas/inicio/logo.png" id="inicioLogo">
+            <img src="img/Pantallas/inicio/fondo.png" id="img">
+            <img src="img/Pantallas/inicio/inicioRapido.png" id="inicioRapido">
+            <img src="img/Pantallas/inicio/Registrar.png" id="btnRegistrar">
+            <img src="img/Pantallas/inicio/btnIniciar.png" id="btnIniciar">
+            <img src="img/Pantallas/inicio/texto.png" id="mensajeInicio">
         </div>
         <div id="creditos" class="ocultar">
             
         </div>
+        <div class="Aplicacion">
+            <div class="menu">
+                <button class="boton" type="button" onclick="perfilfuncion()">Perfil</button>
+                <button class="boton" type="button" onclick="eventosfuncion()">Eventos</button>
+            </div>
+
+            <section class="menuprincipal" id="principalpantalla">
+                <div class="rutinas">
+
+                    <button class="boton" type="button">Rutina</button>
+                    <button class="boton" type="button" onclick="ejerciciosfuncion()">Ejercicios</button>
+                
+                </div>
+
+                <div class="retodelmes">
+                    <p>Aqui va Reto del Mes</p>
+                </div>
+
+                <div class="progresodelusuario">
+                        <progress value="22" max="100"></progress>
+                </div>
+
+                <div class="menusecundario">
+                        <button class="boton" type="button">Estadisticas</button>
+                        <button class="boton" type="button">Inicio</button>
+                        <button class="boton" type="button">Comunidad</button>
+                </div>
+            </section>
+
+            <section class="pantalladeejercicios" id="ejercicios">
+                <div class="botonatras">
+                        <button class="boton" type="button">Atras</button>
+                </div>
+
+                <div class="Mensajederecomendacion">
+                    <p>Mensaje de recomendacion</p>
+                </div>
+                <div class="botonmusculo">
+                    <button class="boton" type="button">Musculo1</button>
+                    <button class="boton" type="button">Musculo2</button>
+                    <button class="boton" type="button">Musculo3</button>
+                    <button class="boton" type="button">MusculoN</button>
+                </div>
+            </section>
+
+            <section class="perfil" id="persona">
+                <p>Este es el perfil de usuario</p>
+            </section>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript" src="js/index.js"></script>

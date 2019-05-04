@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Apr 30 09:36:36 COT 2019
+#Tue Apr 30 09:50:48 COT 2019
 17.baseType=DIRECTORY
 4.path=www/cordova-js-src/plugin/android/app.js
 25.base=C\:\\Users\\user\\Desktop\\BodyTrail\\BodyTrail\\platforms\\android\\app\\build\\intermediates\\assets\\debug
