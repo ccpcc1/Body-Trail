@@ -118,7 +118,7 @@
 {
     position: absolute;
     top: 9px;
-    left: 138px;
+    left: 150px;
     max-width: 33px;
 }
 
@@ -127,15 +127,48 @@
     position: absolute;
     left: 190px;
     max-width: 100px;
-    top: 60px;
+    top: 71px;
 }
 
 #textoEjercicio
 {
     position: absolute;
-    top: 60px;
+    top: 71px;
     left: 30px;
     max-width: 100px;
+}
+#barraSeleccion
+{
+    position: absolute;
+    top: 89px;
+    left: 0px;
+    max-width: 160px;
+}
+
+#imgReto
+{
+    position: absolute;
+    left: 0px;
+    top: 120px;
+    max-width: 320px;
+}
+
+#textoReto
+{
+    position: absolute;
+    left: 0px;
+    max-width: 320px;
+    top: 261px;
+}
+
+
+
+#lineaSeparacion
+{
+    position: absolute;
+    top: 494px;
+    left: 0px;
+    max-width: 320px;
 }
 
 #btnReto
