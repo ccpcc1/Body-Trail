@@ -36,14 +36,15 @@
 #inicioRapido
 {
     position: absolute;
-    bottom: 14px;
-    left: 60px;
+    top: 500px;
+    left: 100px;
+    max-width: 110px;
 }
 
 #btnRegistrar
 {
     position: absolute;
-    bottom: 54px;
+    top: 460px;
     left: 30px;
     max-width: 120px;
 }
@@ -51,8 +52,8 @@
 #btnIniciar
 {
     position: absolute;
-    bottom: 54px;
-    right: 30px;
+    top: 460px;
+    left: 170px;
     max-width: 120px;
 }
 

@@ -1,3 +1,4 @@
+//funciones con inicial btn son para la navegacion de una ventana a otra;
 window.onload = inicio;
 var pantallaInicio="";
 var splash="";
@@ -7,6 +8,9 @@ var PantallaAplicacion="";
 var PantallaBienvenida="";
 var PantallaRegistro="";
 var PantallaLoguin="";
+var btncomenzar="";
+var btnRegistrarse="";
+var btnLoguin="";
 
 function inicio()
 {
@@ -17,8 +21,8 @@ function inicio()
 
 function plash()
 {
-	pantallaInicio.className="pantallas animated rotateInDownRight";
-	PantallaBienvenida.className="ocultar";
+	pantallaInicio.className="ocultar";
+	PantallaBienvenida.className="pantallas animated rotateInDownRight";
 	PantallaAplicacion.className="ocultar";
 	PantallaRegistro.className="ocultar";
 	PantallaLoguin.className="ocultar";
@@ -30,7 +34,11 @@ function inicializar()
 	pantallaInicio=document.getElementById('PantallaInicial');
 	PantallaAplicacion=document.getElementById('PantallaAplicacion');
 	PantallaBienvenida=document.getElementById('PantallaBienvenido');
-
+	PantallaRegistro=document.getElementById('PantallaRegistro');
+	PantallaLoguin=document.getElementById('PantallaLoguin');
+	btncomenzar=document.getElementById('BienvenidoComenzar');
+	btnRegistrarse=document.getElementById('btnRegistrar');
+	btnLoguin=document.getElementById('btnIniciar');
 	splash=document.getElementById('PantallaSplash');
 	Registrar=document.getElementById('Registrar');
 	Login=document.getElementById('IniciarSesion');
@@ -51,8 +59,13 @@ function asignarEventos()
     
    Registrar.addEventListener("click",Registrarse);
    Login.addEventListener("click",Loguin);
+   btncomenzar.addEventListener("click",PantallaInicio);
+   btnLoguin.addEventListener("click",PantallaLoguin);
+   btnRegistrarse.addEventListener("click",PantallaRegistrarse);   
+   
     
 }
+
 
 function Registrarse()
 {
@@ -118,12 +131,39 @@ function Loguin()
 }
 
 
-function PantallaRegistro()
+
+
+function PantallaLoguin()
 {
+	pantallaInicio.className="ocultar";
 	PantallaBienvenida.className="ocultar";
 	PantallaAplicacion.className="ocultar";
+	PantallaRegistro.className="ocultar";
+	PantallaLoguin.className="pantallas";
+
 
 }
+function PantallaInicio()
+{
+	pantallaInicio.className="pantallas";
+	PantallaBienvenida.className="ocultar";
+	PantallaAplicacion.className="ocultar";
+	PantallaRegistro.className="ocultar";
+	PantallaLoguin.className="ocultar";
+}
+
+function PantallaRegistrarse()
+{
+	pantallaInicio.className="ocultar";
+	PantallaBienvenida.className="ocultar";
+	PantallaAplicacion.className="ocultar";
+	PantallaRegistro.className="pantallas";
+	PantallaLoguin.className="ocultar";
+
+
+}
+
+
 
 function ejerciciosfuncion(){
 	ejercicios.className="pantalladeejercicios bounceIn";

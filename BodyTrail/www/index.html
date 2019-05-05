@@ -25,7 +25,7 @@
             <img src="img/Pantallas/inicio/btnIniciar.png" id="btnIniciar">
             <img src="img/Pantallas/inicio/texto.png" id="mensajeInicio">
         </div>
-        <section id="PantallaBienvenido" class="pantallas">
+        <section id="PantallaBienvenido" class="pantallas ocultar">
                     <img src="img/Pantallas/bienvenido/titulo.png" id="BienvenidoTitulo">
                     <img src="img/Pantallas/bienvenido/fondo.png" id="img">
                     <img src="img/Pantallas/bienvenido/texto.png" id="BienvenidoTexto">
@@ -33,17 +33,31 @@
                              
         </section>
 
-        <section id="PantallaPrincipal" class="pantallas"></section>
+         <section id="PantallaRegistro" class="ocultar">
+                <input id="CorreoRegistro" type="email" name="correo" placeholder="ingrese el correo">
+                <input id="PassRegistro" type="password" name="Contaseña" placeholder="contraseña">
+                <input type="button" name="Regristarse" value="Regristarse" id="Registrar">
+             </section>
+
+        <section id="PantallaLoguin" class="ocultar">
+                <input id="CorreoLoguin" type="email" name="correo" placeholder="ingrese el correo">
+                <input id="PassLoguin" type="password" name="Contaseña" placeholder="contraseña">
+                <input type="button" name="Iniciar Sesion" value="Iniciar Sesion" id="IniciarSesion">
+             </section>
+
+        <section id="PantallaPrincipal" class="ocultar">
+            
+        </section>
         <div id="creditos" class="ocultar">
             
         </div>
-        <div class="Aplicacion" id="PantallaAplicacion">
+        <div class="Aplicacion ocultar" id="PantallaAplicacion">
             <div class="menu">
                 <button class="boton" type="button" onclick="perfilfuncion()">Perfil</button>
                 <button class="boton" type="button" onclick="eventosfuncion()">Eventos</button>
             </div>
 
-            <section class="menuprincipal" id="principalpantalla">
+            <section class="menuprincipal ocultar" id="principalpantalla">
                 <div class="rutinas">
 
                     <button class="boton" type="button">Rutina</button>
@@ -51,51 +65,42 @@
                 
                 </div>
 
-                <div class="retodelmes">
+                <div class="retodelmes ocultar">
                     <p>Aqui va Reto del Mes</p>
                 </div>
 
-                <div class="progresodelusuario">
+                <div class="progresodelusuario ocultar">
                         <progress value="22" max="100"></progress>
                 </div>
 
-                <div class="menusecundario">
+                <div class="menusecundario ocultar">
                         <button class="boton" type="button">Estadisticas</button>
                         <button class="boton" type="button">Inicio</button>
                         <button class="boton" type="button">Comunidad</button>
                 </div>
             </section>
 
-            <section class="pantalladeejercicios" id="ejercicios">
+            <section class="pantalladeejercicios ocultar" id="ejercicios">
                 <div class="botonatras">
                         <button class="boton" type="button">Atras</button>
                 </div>
 
-                <div class="Mensajederecomendacion">
+                <div class="Mensajederecomendacion ocultar">
                     <p>Mensaje de recomendacion</p>
                 </div>
-                <div class="botonmusculo">
+                <div class="botonmusculo ocultar" >
                     <button class="boton" type="button">Musculo1</button>
                     <button class="boton" type="button">Musculo2</button>
                     <button class="boton" type="button">Musculo3</button>
                     <button class="boton" type="button">MusculoN</button>
                 </div>
             </section>
-             <section id="PantallaRegistro" class="pantallas">
-                <input id="CorreoRegistro" type="email" name="correo" placeholder="ingrese el correo">
-                <input id="PassRegistro" type="password" name="Contaseña" placeholder="contraseña">
-                <input type="button" name="Regristarse" value="Regristarse" id="Registrar">
-             </section>
-            <section id="PantallaLoguin" class="pantallas">
-                <input id="CorreoLoguin" type="email" name="correo" placeholder="ingrese el correo">
-                <input id="PassLoguin" type="password" name="Contaseña" placeholder="contraseña">
-                <input type="button" name="Iniciar Sesion" value="Iniciar Sesion" id="IniciarSesion">
-             </section>
+            
              
-            <section class="perfil" id="persona">
+            <section class="perfil ocultar" id="persona">
                 <p>Este es el perfil de usuario</p>
             </section>
-        <script type="text/javascript" src="cordova.js"></script>
+        
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
