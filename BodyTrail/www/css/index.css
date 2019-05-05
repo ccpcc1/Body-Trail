@@ -96,6 +96,71 @@
     max-width: 230px;
     top: 400px;
 }
+
+/*Pantalla Principal*/
+#btnEvento
+{
+    position: absolute;
+    top: 9px;
+    left: 280px;
+    max-width: 25px;
+}
+
+#btnPerfil
+{
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    max-width: 25px;
+}
+
+#btnLogo
+{
+    position: absolute;
+    top: 9px;
+    left: 138px;
+    max-width: 33px;
+}
+
+#TextoRutina
+{
+    position: absolute;
+    left: 190px;
+    max-width: 100px;
+    top: 60px;
+}
+
+#textoEjercicio
+{
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    max-width: 100px;
+}
+
+#btnReto
+{
+    position: absolute;
+    top: 505px;
+    left: 280px;
+    max-width: 25px;
+}
+
+#btnActividad
+{
+    position: absolute;
+    top: 505px;
+    left: 9px;
+    max-width: 25px;
+}
+
+#btnPrincipal
+{
+    position: absolute;
+    top: 505px;
+    left: 148px;
+    max-width: 25px;
+}
 /**/
 .menu .boton{
     background-color: #0645aa;

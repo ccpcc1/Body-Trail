@@ -16,7 +16,7 @@ function inicio()
 {
 	inicializar();
 	asignarEventos();
-	setTimeout(plash,2000);	
+	//setTimeout(plash,2000);	
 }
 
 function plash()
@@ -60,7 +60,7 @@ function asignarEventos()
    Registrar.addEventListener("click",Registrarse);
    Login.addEventListener("click",Loguin);
    btncomenzar.addEventListener("click",PantallaInicio);
-   btnLoguin.addEventListener("click",PantallaLoguin);
+   btnLoguin.addEventListener("click",PantallaIniciarSesion);
    btnRegistrarse.addEventListener("click",PantallaRegistrarse);   
    
     
@@ -133,7 +133,7 @@ function Loguin()
 
 
 
-function PantallaLoguin()
+function PantallaIniciarSesion()
 {
 	pantallaInicio.className="ocultar";
 	PantallaBienvenida.className="ocultar";
@@ -160,6 +160,11 @@ function PantallaRegistrarse()
 	PantallaRegistro.className="pantallas";
 	PantallaLoguin.className="ocultar";
 
+
+}
+
+function pantallaPrincipal()
+{
 
 }
 
