@@ -32,7 +32,7 @@
     margin: 0px;
 }
 
-/*Pantalla bienvenida*/
+/*Pantalla inicio*/
 #inicioRapido
 {
     position: absolute;
@@ -69,6 +69,31 @@
     top: 100px;
     left: 69px;
     max-width: 200px;
+}
+
+/*Pantalla Bienvenido*/
+#BienvenidoTitulo
+{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    max-width: 283px;
+}
+
+#BienvenidoTexto
+{
+    position: absolute;
+    left: 0px;
+    top: 193px;
+    max-width: 320px;
+}
+
+#BienvenidoComenzar
+{
+    position: absolute;
+    left: 45px;
+    max-width: 230px;
+    top: 400px;
 }
 /**/
 .menu .boton{

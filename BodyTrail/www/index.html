@@ -25,10 +25,19 @@
             <img src="img/Pantallas/inicio/btnIniciar.png" id="btnIniciar">
             <img src="img/Pantallas/inicio/texto.png" id="mensajeInicio">
         </div>
+        <section id="PantallaBienvenido" class="pantallas">
+                    <img src="img/Pantallas/bienvenido/titulo.png" id="BienvenidoTitulo">
+                    <img src="img/Pantallas/bienvenido/fondo.png" id="img">
+                    <img src="img/Pantallas/bienvenido/texto.png" id="BienvenidoTexto">
+                    <img src="img/Pantallas/bienvenido/comenzar.png" id="BienvenidoComenzar">
+                             
+        </section>
+
+        <section id="PantallaPrincipal" class="pantallas"></section>
         <div id="creditos" class="ocultar">
             
         </div>
-        <div class="Aplicacion">
+        <div class="Aplicacion" id="PantallaAplicacion">
             <div class="menu">
                 <button class="boton" type="button" onclick="perfilfuncion()">Perfil</button>
                 <button class="boton" type="button" onclick="eventosfuncion()">Eventos</button>
@@ -72,7 +81,17 @@
                     <button class="boton" type="button">MusculoN</button>
                 </div>
             </section>
-
+             <section id="PantallaRegistro" class="pantallas">
+                <input id="CorreoRegistro" type="email" name="correo" placeholder="ingrese el correo">
+                <input id="PassRegistro" type="password" name="Contaseña" placeholder="contraseña">
+                <input type="button" name="Regristarse" value="Regristarse" id="Registrar">
+             </section>
+            <section id="PantallaLoguin" class="pantallas">
+                <input id="CorreoLoguin" type="email" name="correo" placeholder="ingrese el correo">
+                <input id="PassLoguin" type="password" name="Contaseña" placeholder="contraseña">
+                <input type="button" name="Iniciar Sesion" value="Iniciar Sesion" id="IniciarSesion">
+             </section>
+             
             <section class="perfil" id="persona">
                 <p>Este es el perfil de usuario</p>
             </section>
