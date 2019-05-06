@@ -16,7 +16,7 @@ function inicio()
 {
 	inicializar();
 	asignarEventos();
-	//setTimeout(plash,2000);	
+	setTimeout(plash,2000);	
 }
 
 function plash()
