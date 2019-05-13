@@ -15,6 +15,8 @@ var btnLoguin="";
 var ejercicios="";
 var rutina="";
 var usu= new Object();
+let usuarios;
+var index=-1;
 
 function inicio()
 {
@@ -117,13 +119,22 @@ function Loguin()
 	var pass=document.getElementById('PassLoguin').value;
 	if (correo.length>0 && pass.length>0)
 	{
-		let usuarios =JSON.parse(localStorage.getItem("Usuarios"));
+		usuarios =JSON.parse(localStorage.getItem("Usuarios"));
 		usu = usuarios.filter(function (usuario) { return usuario.correo == correo; });
 
 		if (usu.length>0)
 		{
 			if (pass==usu[0].pass) 
 			{
+				//para obtener la posicion del arreglo de usuarios en local store una vez
+				for(var i = 0; i < usuarios.length; i++) 
+				{
+    					if (usuarios[i].correo === correo)
+    					{
+        					index = i;
+        					break;
+    					}
+				}
 				pantallaPrincipal();
 			}
 			else
@@ -146,23 +157,26 @@ function Loguin()
 function agregarARutina(rutina)
 {
 	//mejorar el for se puede hacer en el loguin para solo hacerlo una vez.
-	var correo = usu[0].correo,
-    index = -1;
-	for(var i = 0, len = usuarios.length; i < len; i++) 
-	{
-    	if (usuarios[i].correo === correo) {
-        index = i;
-        break;
-    	}
-	}
-	if (usu[i].rutina>0){
-		usu[i].rutina.push(rutina);
-	}
-	else
-	{
-		usu[i].rutina=[];
-		usu[i].rutina.push(rutina);
-	}
+	var correo = usu[0].correo;
+	var usuario= new Object();
+	
+		if (usu[0].hasOwnProperty('rutina'))
+		{
+			usu[0].rutina.push(rutina);
+			
+		}
+		else
+		{		
+			usuario.correo= usu[0].correo;
+			usuario.pass=usu[0].pass;
+			usuario.rutina=[];
+			usuario.rutina.push(rutina);
+			usu[0]=usuario;	
+		}
+	
+		usuarios[index]=usu[0];
+		localStorage.setItem("Usuarios", JSON.stringify(usuarios));
+	
 }
 
 
