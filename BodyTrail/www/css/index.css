@@ -383,6 +383,31 @@
 
     
 }
+/*Pantalla creditos*/
+#banner
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: 320px;
+}
+
+#btnAtras
+{
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    max-width: 22px;
+    z-index: 1;
+}
+
+#contenido
+{
+    position: absolute;
+    top: 88px;
+    left: 0px;
+    max-width: 320px;
+}
 /**/
 .menu .boton{
     background-color: #0645aa;
