@@ -8,9 +8,13 @@ var PantallaAplicacion="";
 var PantallaBienvenida="";
 var PantallaRegistro="";
 var PantallaLoguin="";
+var PantallaPrincipal="";
 var btncomenzar="";
 var btnRegistrarse="";
 var btnLoguin="";
+var ejercicios="";
+var rutina="";
+var usu= new Object();
 
 function inicio()
 {
@@ -36,13 +40,16 @@ function inicializar()
 	PantallaBienvenida=document.getElementById('PantallaBienvenido');
 	PantallaRegistro=document.getElementById('PantallaRegistro');
 	PantallaLoguin=document.getElementById('PantallaLoguin');
+	PantallaPrincipal=document.getElementById('PantallaPrincipal');
 	btncomenzar=document.getElementById('BienvenidoComenzar');
 	btnRegistrarse=document.getElementById('btnRegistrar');
 	btnLoguin=document.getElementById('btnIniciar');
 	splash=document.getElementById('PantallaSplash');
 	Registrar=document.getElementById('Registrar');
 	Login=document.getElementById('IniciarSesion');
-	ejercicios.className="ocultar";
+	ejercicios=document.getElementById('textoEjercicio');
+	rutina=document.getElementById('TextoRutina');
+
 	principalpantalla.className="ocultar";
 	persona.className="ocultar";
 	$('#barraCarga').jQMeter({
@@ -61,7 +68,9 @@ function asignarEventos()
    Login.addEventListener("click",Loguin);
    btncomenzar.addEventListener("click",PantallaInicio);
    btnLoguin.addEventListener("click",PantallaIniciarSesion);
-   btnRegistrarse.addEventListener("click",PantallaRegistrarse);   
+   btnRegistrarse.addEventListener("click",PantallaRegistrarse);
+   ejercicios.addEventListener("click",ejerciciosPrincipal);
+   rutina.addEventListener("click",rutinaPrincipal);   
    
     
 }
@@ -77,23 +86,26 @@ function Registrarse()
 			Usuario.correo=correo;
 			Usuario.pass=pass;
 			let usuarios = localStorage.getItem("Usuarios") != null ? JSON.parse(localStorage.getItem("Usuarios")) : [];
-			var usu = usuarios.filter(function (usuario) { return usuario.correo == correo; });
+			usu = usuarios.filter(function (usuario) { return usuario.correo == correo; });
 			if (usu.length>0)
 			{
-				console.log("Ya se encuentra registrado este correo,intentelo con otro");
+				alert("Ya se encuentra registrado este correo,intentelo con otro");
 
 			}
 			else
 			{
+				//toda cambiarlo para que vaya a otra pantalla
 				usuarios.push(Usuario);
-				localStorage.setItem("Usuarios", JSON.stringify(usuarios));    
-				console.log("se registo");
+				localStorage.setItem("Usuarios", JSON.stringify(usuarios));
+				//alert("Usuario Registrado");
+				PantallaIniciarSesion();    
+				
 			}
 			
 	}
 	else
 	{
-		console.log("rellene los campos");
+		alert("rellene los campos");
 	}
 	
 	
@@ -106,30 +118,69 @@ function Loguin()
 	if (correo.length>0 && pass.length>0)
 	{
 		let usuarios =JSON.parse(localStorage.getItem("Usuarios"));
-		var usu = usuarios.filter(function (usuario) { return usuario.correo == correo; });
+		usu = usuarios.filter(function (usuario) { return usuario.correo == correo; });
+
 		if (usu.length>0)
 		{
 			if (pass==usu[0].pass) 
 			{
-				console.log("InicioSesion");
+				pantallaPrincipal();
 			}
 			else
 			{
-				console.log("Contraseña incorrecta");
+				alert("Contraseña incorrecta");
 			}
 		}
 		else
 		{
-			console.log("Correo invalido");
+			alert("Correo invalido");
 		}
 		
 	}
 	else
 	{
-		console.log("rellene los campos");
+		alert("rellene los campos");
 	}
 }
 
+function agregarARutina(rutina)
+{
+	//mejorar el for se puede hacer en el loguin para solo hacerlo una vez.
+	var correo = usu[0].correo,
+    index = -1;
+	for(var i = 0, len = usuarios.length; i < len; i++) 
+	{
+    	if (usuarios[i].correo === correo) {
+        index = i;
+        break;
+    	}
+	}
+	if (usu[i].rutina>0){
+		usu[i].rutina.push(rutina);
+	}
+	else
+	{
+		usu[i].rutina=[];
+		usu[i].rutina.push(rutina);
+	}
+}
+
+
+
+function ejerciciosPrincipal()
+{
+	document.getElementById('barraSeleccion').className="";
+	document.getElementById('barraSeleccion2').className="ocultar";
+
+	
+}
+
+function rutinaPrincipal()
+{
+	document.getElementById('barraSeleccion').className="ocultar";
+	document.getElementById('barraSeleccion2').className="";
+
+}
 
 
 
@@ -140,6 +191,8 @@ function PantallaIniciarSesion()
 	PantallaAplicacion.className="ocultar";
 	PantallaRegistro.className="ocultar";
 	PantallaLoguin.className="pantallas";
+	PantallaPrincipal.className="ocultar";
+	
 
 
 }
@@ -150,6 +203,7 @@ function PantallaInicio()
 	PantallaAplicacion.className="ocultar";
 	PantallaRegistro.className="ocultar";
 	PantallaLoguin.className="ocultar";
+	PantallaPrincipal.className="ocultar";
 }
 
 function PantallaRegistrarse()
@@ -159,12 +213,20 @@ function PantallaRegistrarse()
 	PantallaAplicacion.className="ocultar";
 	PantallaRegistro.className="pantallas";
 	PantallaLoguin.className="ocultar";
+	PantallaPrincipal.className="ocultar";
 
 
 }
 
 function pantallaPrincipal()
 {
+	PantallaBienvenida.className="ocultar";
+	PantallaAplicacion.className="ocultar";
+	PantallaRegistro.className="ocultar";
+	PantallaLoguin.className="ocultar";
+	PantallaPrincipal.className="ocultar";
+	PantallaPrincipal.className="pantallas";
+
 
 }
 
@@ -174,18 +236,21 @@ function ejerciciosfuncion(){
 	ejercicios.className="pantalladeejercicios bounceIn";
 	principalpantalla.className="ocultar";
 	persona.className="ocultar";
+	PantallaPrincipal.className="ocultar";
 }
 
 function eventosfuncion(){
 	ejerciciosfuncion.className="ocultar";
 	principalpantalla.className="menuprincipal bounceIn";
 	persona.className="ocultar";
+	PantallaPrincipal.className="ocultar";
 }
 
 function perfilfuncion(){
 	ejerciciosfuncion.className="ocultar";
 	principalpantalla.className="ocultar";
 	persona.className="perfil bounceIn";
+	PantallaPrincipal.className="ocultar";
 }
 
 

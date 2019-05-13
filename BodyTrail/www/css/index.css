@@ -1,7 +1,6 @@
 /*codigo general*/
 .ocultar{
     display: none;
-
 }
 
 #img
@@ -145,6 +144,13 @@
     max-width: 160px;
 }
 
+#barraSeleccion2
+{
+    position: absolute;
+    top: 89px;
+    left: 160px;
+    max-width: 160px;
+}
 #imgReto
 {
     position: absolute;
@@ -193,6 +199,189 @@
     top: 505px;
     left: 148px;
     max-width: 25px;
+}
+
+/* Pantalla Registro */
+
+#logoregistro
+{
+    position: absolute;
+    top: 70px;
+    left: 130px;
+    max-width: 50px;
+}
+
+#fondoreg
+{
+    max-width: 320px;
+    min-height: 544px;
+    max-height: 544px;
+}
+
+#titulologin{
+    position: absolute;
+    top: 130px;
+    left: 60px;
+    max-width: 200px;
+}
+
+#labelcorreo{
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    color: white;
+    font-size: 13px; 
+}
+
+#labelpass{
+    position: absolute;
+    top: 290px;
+    left: 30px;
+    color: white;
+    font-size: 13px; 
+}
+
+.inputslogin{
+    position: absolute;
+    max-width: 400px;
+    width: 250px;
+    top: 230px;
+    left: 30px;
+    padding: 5px 5px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    font-size: 13px;  
+}
+
+.inputslogin2{
+    position: absolute;
+    max-width: 400px;
+    width: 250px;
+    top: 320px;
+    left: 30px;
+    padding: 5px 5px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    font-size: 13px;  
+}
+
+.botonolvidopass{
+    position: absolute;
+    top: 370px;
+    left: 30px;
+    padding: 5px;
+    color: white;
+    max-width: 200px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    font-size: 13px;  
+    outline: none;
+}
+
+.botoningresar{
+    position: absolute;
+    top: 430px;
+    left: 55px;
+    max-width: 200px;
+}
+
+/*Pantalla registro 2*/
+
+#logoregistro2
+{
+    position: absolute;
+    top: 28px;
+    left: 130px;
+    max-width: 332px; 
+}
+
+#tituloRegistro2
+{
+    position: absolute;
+    top: 115px;
+    left: 44px;
+    max-width: 240px;
+}
+#textoRegistro2
+{
+    position: absolute;
+    top: 151px;
+    left: 44px;
+    max-width: 230px;
+}
+
+#GeneroRegistro2
+{
+    position: absolute;
+    top: 195px;
+    left: 89px;
+    max-width: 147px;
+}
+
+#MasculinoRegistro2
+{
+    position: absolute;
+    top: 238px;
+    left: 0px;
+    max-width: 160px;
+}
+
+#femeninoRegistro2
+{
+    position: absolute;
+    top: 238px;
+    left: 170px;
+    max-width: 160px;
+}
+
+#EstaturaRegistro2
+{
+    position: absolute;
+    left: 79px;
+    max-width: 160px;
+    top: 297px;
+}
+#txtEstaturaRegistro2
+{
+    position: absolute;
+    left: 79px;
+    max-width: 160px;
+    top: 340px;
+    background: #656565;
+    border: none; 
+}
+
+#PesoRegistro
+{
+    position: absolute;
+    top: 400px;
+    left: 110px;
+    max-width: 100px;
+}
+
+#txtPesoRegistro2
+{
+    position: absolute;
+    top: 439px;
+    left: 79px;
+    max-width: 160px;
+    background: #656565;
+    border: none; 
+
+    
 }
 /**/
 .menu .boton{
