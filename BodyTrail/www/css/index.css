@@ -416,6 +416,75 @@
     left: 0px;
     max-width: 320px;
 }
+
+/*Pantalla estadisticas*/
+#texto-nvPrincipiante
+{
+    position: absolute;
+    left: 80px;
+    max-width: 150px;
+    top: 54px;
+}
+
+#Estadisticasprogreso
+{
+    position: absolute;
+    left: 107px;
+    max-width: 100px;
+    top: 63px;
+}
+#EstadisticasBanner
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: 320px;
+}
+
+#EstadisticasEstadisticas
+{
+    position: absolute;
+    left: 72px;
+    max-width: 160px;
+    top: 171px;
+}
+
+#EstadisticasTitulo2
+{
+    position: absolute;
+    top: 203px;
+    left: 0px;
+    max-width: 100px;
+}
+
+#EstadisticasTitulo3
+{
+    position: absolute;
+    left: 20px;
+    top: 225px;
+    max-width: 73px;
+}
+#EstadisticasLogros1
+{
+    position: absolute;
+    top: 246px;
+    left: 41px;
+    max-width: 234px;
+}
+#EstadisticasLogros2
+{
+    position: absolute;
+    top: 332px;
+    left: 41px;
+    max-width: 234px;
+}
+#EstadisticasLogros3
+{
+    position: absolute;
+    top: 414px;
+    left: 41px;
+    max-width: 234px;
+}
 /**/
 .menu .boton{
     background-color: #0645aa;
