@@ -96,6 +96,14 @@
     top: 400px;
 }
 
+#acercaNosotros
+{
+    position: absolute;
+    top: 474px;
+    left: 60px;
+    max-width: 200px;
+}
+
 /*Pantalla Principal*/
 #btnEvento
 {
