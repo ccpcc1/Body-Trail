@@ -85,7 +85,8 @@ function asignarEventos()
    ejercicios.addEventListener("click",ejerciciosPrincipal);
    rutina.addEventListener("click",rutinaPrincipal);
    btnCreditos.addEventListener("click",IrACreditos);
-   btnVolver.addEventListener("click",plash);  
+   btnVolver.addEventListener("click",plash);
+   document.getElementById('inicioRapido').addEventListener("click",pantallaPrincipal);  
    
     
 }
@@ -251,11 +252,12 @@ function PantallaRegistrarse()
 
 function pantallaPrincipal()
 {
+	pantallaInicio.className="ocultar";
 	PantallaBienvenida.className="ocultar";
 	PantallaAplicacion.className="ocultar";
 	PantallaRegistro.className="ocultar";
 	PantallaLoguin.className="ocultar";
-	PantallaPrincipal.className="ocultar";
+	PantallaCreditos.className="ocultar";
 	PantallaPrincipal.className="pantallas";
 	PantallaCreditos.className="ocultar";
 
