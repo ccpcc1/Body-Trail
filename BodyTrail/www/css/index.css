@@ -485,6 +485,30 @@
     left: 41px;
     max-width: 234px;
 }
+/*Pantalla Perfil*/
+#textoPerfil
+{
+    position: absolute;
+    left: 86px;
+    top: 332px;
+    max-width: 152px;
+}
+#imagenPerfil
+{
+    position: absolute;
+    top: 106px;
+    left: 61px;
+    max-width: 200px;
+}
+
+#bntAtrasPerfil
+{
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    max-width: 22px;
+    z-index: 1;   
+}
 /**/
 .menu .boton{
     background-color: #0645aa;
