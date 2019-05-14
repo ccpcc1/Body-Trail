@@ -509,6 +509,51 @@
     max-width: 22px;
     z-index: 1;   
 }
+/*Pantalla ejerciciosDisponibles*/
+#ejerciciosDisponiblesAbdomen
+{
+    position: absolute;
+    top: 75px;
+    left: 12px;
+    max-width: 259px;
+
+
+}
+#ejerciciosDisponiblesFuerza
+{
+    position: absolute;
+    top: 168px;
+    left: 12px;
+    max-width: 259px;
+
+
+}
+#ejerciciosDisponiblesCardio
+{
+    position: absolute;
+    top: 75px;
+    left: 12px;
+    max-width: 259px;
+
+
+}
+#ejerciciosDisponiblesSinImplementos
+{
+   position: absolute;
+    top: 355px;
+    left: 12px;
+    max-width: 259px;
+
+}
+#ejerciciosDisponiblesPierna
+{
+    position: absolute;
+    top: 261px;
+    left: 12px;
+    max-width: 259px;
+
+
+}
 /**/
 .menu .boton{
     background-color: #0645aa;
