@@ -579,10 +579,14 @@
 
 #seccionPrueba
 {
-    top:10px;
+    top: 100px;
+    position: absolute;
+    max-height: 369px;
+    overflow: scroll;
 }
 
 #imgprueba
 {
     max-width: 250px;
+    display: block;
 }

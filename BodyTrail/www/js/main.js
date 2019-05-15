@@ -195,9 +195,13 @@ function agregarARutina(rutina)
 
 function PintarRutina()
 {
+	var i = 0
 	if (usu[0].hasOwnProperty('rutina'))
 		{
-			$("#seccionPrueba").append("<img src='img/Pantallas/ejerciciosdisponibles/abdomen.png' id='imgprueba'>");
+			for (i=0; i< usu[0].rutina.length; i++) {
+				$("#seccionPrueba").append("<img src='img/Pantallas/ejerciciosdisponibles/"+usu[0].rutina[i]+".png' id='imgprueba'>");
+			}
+			
 			//recorrer la rutina	
 			
 		}
