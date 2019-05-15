@@ -576,3 +576,13 @@
 .menu .boton:hover {
     background-color: #3474db;
 }
+
+#seccionPrueba
+{
+    top:10px;
+}
+
+#imgprueba
+{
+    max-width: 250px;
+}

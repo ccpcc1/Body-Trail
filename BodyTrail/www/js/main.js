@@ -193,6 +193,20 @@ function agregarARutina(rutina)
 	
 }
 
+function PintarRutina()
+{
+	if (usu[0].hasOwnProperty('rutina'))
+		{
+			$("#seccionPrueba").append("<img src='img/Pantallas/ejerciciosdisponibles/abdomen.png' id='imgprueba'>");
+			//recorrer la rutina	
+			
+		}
+		else
+		{		
+			
+		}
+}
+
 
 
 function ejerciciosPrincipal()
