@@ -99,8 +99,14 @@ function Registrarse()
 	if (correo.length>0 && pass.length>0)
 	{						
 			var Usuario= new Object();
+			var retos= new Object();
+			retos.numRetos=0;
+			retos.RetoMesdiasCompletados=0;
+			retos.RetoMesFechaFin="";
+			retos.RetoMesUltimoDia=""; // se guarda el ultimo dia que se completo el reto
 			Usuario.correo=correo;
 			Usuario.pass=pass;
+			Usuario.retos= retos;
 			let usuarios = localStorage.getItem("Usuarios") != null ? JSON.parse(localStorage.getItem("Usuarios")) : [];
 			usu = usuarios.filter(function (usuario) { return usuario.correo == correo; });
 			if (usu.length>0)
@@ -198,16 +204,17 @@ function PintarRutina()
 	var i = 0
 	if (usu[0].hasOwnProperty('rutina'))
 		{
+			//se recorre el arreglo de rutinas	
 			for (i=0; i< usu[0].rutina.length; i++) {
 				$("#seccionPrueba").append("<img src='img/Pantallas/ejerciciosdisponibles/"+usu[0].rutina[i]+".png' id='imgprueba'>");
 			}
 			
-			//recorrer la rutina	
+			
 			
 		}
 		else
 		{		
-			
+			//significa que no tiene ningun ejercicio en su rutina
 		}
 }
 
