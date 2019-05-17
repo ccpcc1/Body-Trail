@@ -554,6 +554,63 @@
 
 
 }
+/*Pantalla eventos*/
+#EventosBanner
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: 320px;
+}
+
+#EventosBanner2
+{
+    position: absolute;
+    top: 55px;
+    left: 0px;
+    max-width: 320px;
+}
+
+
+#EventosEvento1
+{
+    position: absolute;
+    top: 187px;
+    left: 0px;
+    max-width: 320px;
+}
+#EventosEvento2
+{
+    position: absolute;
+    left: 0px;
+    max-width: 320px;
+    top: 255px;
+}
+
+#EventosEvento3
+{
+    position: absolute;
+    top: 323px;
+    left: 0px;
+    max-width: 320px;
+}
+#EventosEvento4
+{
+    position: absolute;
+    left: 0px;
+    max-width: 320px;
+    top: 390px;
+}
+
+#EventosTitulo1
+{
+    position: absolute;
+    left: 37px;
+    max-width: 160px;
+    top: 168px;
+}
+
+
 /**/
 .menu .boton{
     background-color: #0645aa;
