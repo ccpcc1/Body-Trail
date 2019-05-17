@@ -16,6 +16,7 @@
     min-height: 544px;
     max-height: 544px;
     margin:0px;
+    overflow: hidden;
 }
 /*Splash screen*/
 #PantallaSplash
@@ -609,6 +610,7 @@
     max-width: 160px;
     top: 168px;
 }
+
 
 
 /**/

@@ -1,7 +1,6 @@
-
+/*codigo general*/
 .ocultar{
     display: none;
-
 }
 
 #img
@@ -11,15 +10,20 @@
     max-height: 544px;
 }
 
-
 .pantallas
 {
     max-width: 320px;
     min-height: 544px;
     max-height: 544px;
     margin:0px;
+    overflow: hidden;
 }
-
+/*Splash screen*/
+#PantallaSplash
+{
+   margin-bottom: -18px;
+}
+    
 #barraCarga
 {
     position: relative;
@@ -28,7 +32,619 @@
     margin: 0px;
 }
 
-span
+/*Pantalla inicio*/
+#inicioRapido
 {
-    left: -50%;
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    max-width: 110px;
+}
+
+#btnRegistrar
+{
+    position: absolute;
+    top: 460px;
+    left: 30px;
+    max-width: 120px;
+}
+
+#btnIniciar
+{
+    position: absolute;
+    top: 460px;
+    left: 170px;
+    max-width: 120px;
+}
+
+#mensajeInicio
+{
+    position: absolute;
+    top: 308px;
+    left: 79px;
+    max-width: 160px;
+}
+#inicioLogo
+{
+    position: absolute;
+    top: 100px;
+    left: 69px;
+    max-width: 200px;
+}
+
+/*Pantalla Bienvenido*/
+#BienvenidoTitulo
+{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    max-width: 283px;
+}
+
+#BienvenidoTexto
+{
+    position: absolute;
+    left: 0px;
+    top: 193px;
+    max-width: 320px;
+}
+
+#BienvenidoComenzar
+{
+    position: absolute;
+    left: 45px;
+    max-width: 230px;
+    top: 400px;
+}
+
+#acercaNosotros
+{
+    position: absolute;
+    top: 474px;
+    left: 60px;
+    max-width: 200px;
+}
+
+/*Pantalla Principal*/
+#btnEvento
+{
+    position: absolute;
+    top: 9px;
+    left: 280px;
+    max-width: 25px;
+}
+
+#btnPerfil
+{
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    max-width: 25px;
+}
+
+#btnLogo
+{
+    position: absolute;
+    top: 9px;
+    left: 150px;
+    max-width: 33px;
+}
+
+#TextoRutina
+{
+    position: absolute;
+    left: 190px;
+    max-width: 100px;
+    top: 71px;
+}
+
+#textoEjercicio
+{
+    position: absolute;
+    top: 71px;
+    left: 30px;
+    max-width: 100px;
+}
+#barraSeleccion
+{
+    position: absolute;
+    top: 89px;
+    left: 0px;
+    max-width: 160px;
+}
+
+#barraSeleccion2
+{
+    position: absolute;
+    top: 89px;
+    left: 160px;
+    max-width: 160px;
+}
+#imgReto
+{
+    position: absolute;
+    left: 0px;
+    top: 120px;
+    max-width: 320px;
+}
+
+#textoReto
+{
+    position: absolute;
+    left: 0px;
+    max-width: 320px;
+    top: 261px;
+}
+
+
+
+#lineaSeparacion
+{
+    position: absolute;
+    top: 494px;
+    left: 0px;
+    max-width: 320px;
+}
+
+#btnReto
+{
+    position: absolute;
+    top: 505px;
+    left: 280px;
+    max-width: 25px;
+}
+
+#btnActividad
+{
+    position: absolute;
+    top: 505px;
+    left: 9px;
+    max-width: 25px;
+}
+
+#btnPrincipal
+{
+    position: absolute;
+    top: 505px;
+    left: 148px;
+    max-width: 25px;
+}
+
+/* Pantalla Registro */
+
+#logoregistro
+{
+    position: absolute;
+    top: 70px;
+    left: 130px;
+    max-width: 50px;
+}
+
+#fondoreg
+{
+    max-width: 320px;
+    min-height: 544px;
+    max-height: 544px;
+}
+
+#titulologin{
+    position: absolute;
+    top: 130px;
+    left: 60px;
+    max-width: 200px;
+}
+
+#labelcorreo{
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    color: white;
+    font-size: 13px; 
+}
+
+#labelpass{
+    position: absolute;
+    top: 290px;
+    left: 30px;
+    color: white;
+    font-size: 13px; 
+}
+
+.inputslogin{
+    position: absolute;
+    max-width: 400px;
+    width: 250px;
+    top: 230px;
+    left: 30px;
+    padding: 5px 5px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    font-size: 13px;  
+}
+
+.inputslogin2{
+    position: absolute;
+    max-width: 400px;
+    width: 250px;
+    top: 320px;
+    left: 30px;
+    padding: 5px 5px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    font-size: 13px;  
+}
+
+.botonolvidopass{
+    position: absolute;
+    top: 370px;
+    left: 30px;
+    padding: 5px;
+    color: white;
+    max-width: 200px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    font-size: 13px;  
+    outline: none;
+}
+
+.botoningresar{
+    position: absolute;
+    top: 430px;
+    left: 55px;
+    max-width: 200px;
+}
+
+/*Pantalla registro 2*/
+
+#logoregistro2
+{
+    position: absolute;
+    top: 28px;
+    left: 130px;
+    max-width: 332px; 
+}
+
+#tituloRegistro2
+{
+    position: absolute;
+    top: 115px;
+    left: 44px;
+    max-width: 240px;
+}
+#textoRegistro2
+{
+    position: absolute;
+    top: 151px;
+    left: 44px;
+    max-width: 230px;
+}
+
+#GeneroRegistro2
+{
+    position: absolute;
+    top: 195px;
+    left: 89px;
+    max-width: 147px;
+}
+
+#MasculinoRegistro2
+{
+    position: absolute;
+    top: 238px;
+    left: 0px;
+    max-width: 160px;
+}
+
+#femeninoRegistro2
+{
+    position: absolute;
+    top: 238px;
+    left: 170px;
+    max-width: 160px;
+}
+
+#EstaturaRegistro2
+{
+    position: absolute;
+    left: 79px;
+    max-width: 160px;
+    top: 297px;
+}
+#txtEstaturaRegistro2
+{
+    position: absolute;
+    left: 79px;
+    max-width: 160px;
+    top: 340px;
+    background: #656565;
+    border: none; 
+}
+
+#PesoRegistro
+{
+    position: absolute;
+    top: 400px;
+    left: 110px;
+    max-width: 100px;
+}
+
+#txtPesoRegistro2
+{
+    position: absolute;
+    top: 439px;
+    left: 79px;
+    max-width: 160px;
+    background: #656565;
+    border: none; 
+
+    
+}
+/*Pantalla creditos*/
+#banner
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: 320px;
+}
+
+#btnAtras
+{
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    max-width: 22px;
+    z-index: 1;
+}
+
+#contenido
+{
+    position: absolute;
+    top: 88px;
+    left: 0px;
+    max-width: 320px;
+}
+
+/*Pantalla estadisticas*/
+#texto-nvPrincipiante
+{
+    position: absolute;
+    left: 80px;
+    max-width: 150px;
+    top: 54px;
+}
+
+#Estadisticasprogreso
+{
+    position: absolute;
+    left: 107px;
+    max-width: 100px;
+    top: 63px;
+}
+#EstadisticasBanner
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: 320px;
+}
+
+#EstadisticasEstadisticas
+{
+    position: absolute;
+    left: 72px;
+    max-width: 160px;
+    top: 171px;
+}
+
+#EstadisticasTitulo2
+{
+    position: absolute;
+    top: 203px;
+    left: 0px;
+    max-width: 100px;
+}
+
+#EstadisticasTitulo3
+{
+    position: absolute;
+    left: 20px;
+    top: 225px;
+    max-width: 73px;
+}
+#EstadisticasLogros1
+{
+    position: absolute;
+    top: 246px;
+    left: 41px;
+    max-width: 234px;
+}
+#EstadisticasLogros2
+{
+    position: absolute;
+    top: 332px;
+    left: 41px;
+    max-width: 234px;
+}
+#EstadisticasLogros3
+{
+    position: absolute;
+    top: 414px;
+    left: 41px;
+    max-width: 234px;
+}
+/*Pantalla Perfil*/
+#textoPerfil
+{
+    position: absolute;
+    left: 86px;
+    top: 332px;
+    max-width: 152px;
+}
+#imagenPerfil
+{
+    position: absolute;
+    top: 106px;
+    left: 61px;
+    max-width: 200px;
+}
+
+#bntAtrasPerfil
+{
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    max-width: 22px;
+    z-index: 1;   
+}
+/*Pantalla ejerciciosDisponibles*/
+#ejerciciosDisponiblesAbdomen
+{
+    position: absolute;
+    top: 75px;
+    left: 12px;
+    max-width: 259px;
+
+
+}
+#ejerciciosDisponiblesFuerza
+{
+    position: absolute;
+    top: 168px;
+    left: 12px;
+    max-width: 259px;
+
+
+}
+#ejerciciosDisponiblesCardio
+{
+    position: absolute;
+    top: 75px;
+    left: 12px;
+    max-width: 259px;
+
+
+}
+#ejerciciosDisponiblesSinImplementos
+{
+   position: absolute;
+    top: 355px;
+    left: 12px;
+    max-width: 259px;
+
+}
+#ejerciciosDisponiblesPierna
+{
+    position: absolute;
+    top: 261px;
+    left: 12px;
+    max-width: 259px;
+
+
+}
+/*Pantalla eventos*/
+#EventosBanner
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: 320px;
+}
+
+#EventosBanner2
+{
+    position: absolute;
+    top: 55px;
+    left: 0px;
+    max-width: 320px;
+}
+
+
+#EventosEvento1
+{
+    position: absolute;
+    top: 187px;
+    left: 0px;
+    max-width: 320px;
+}
+#EventosEvento2
+{
+    position: absolute;
+    left: 0px;
+    max-width: 320px;
+    top: 255px;
+}
+
+#EventosEvento3
+{
+    position: absolute;
+    top: 323px;
+    left: 0px;
+    max-width: 320px;
+}
+#EventosEvento4
+{
+    position: absolute;
+    left: 0px;
+    max-width: 320px;
+    top: 390px;
+}
+
+#EventosTitulo1
+{
+    position: absolute;
+    left: 37px;
+    max-width: 160px;
+    top: 168px;
+}
+
+
+/**/
+.menu .boton{
+    background-color: #0645aa;
+    border: 1px solid blue;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 40px;
+    border-radius: 8px;
+}
+
+.menu .boton:not(:last-child) {
+    border-right: none; 
+}
+
+.menu .boton:hover {
+    background-color: #3474db;
+}
+
+#seccionPrueba
+{
+    top: 100px;
+    position: absolute;
+    max-height: 369px;
+    overflow: scroll;
+}
+
+#imgprueba
+{
+    max-width: 250px;
+    display: block;
 }

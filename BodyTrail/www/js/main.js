@@ -13,13 +13,17 @@ var PantallaCreditos="";
 var btncomenzar="";
 var btnVolver="";
 var btnRegistrarse="";
+var PantallaEventos="";
 var btnLoguin="";
 var btnCreditos="";
+var btnEventos="";
+var btnPerfil="";
 var ejercicios="";
 var rutina="";
 var usu= new Object();
 let usuarios;
 var index=-1;
+var atras="";
 
 
 function inicio()
@@ -52,11 +56,16 @@ function inicializar()
 	PantallaLoguin=document.getElementById('PantallaLoguin');
 	PantallaPrincipal=document.getElementById('PantallaPrincipal');
 	PantallaCreditos=document.getElementById('Pantallacreditos');
+	PantallaEventos=document.getElementById('PantallaEventos');
 	btncomenzar=document.getElementById('BienvenidoComenzar');
+
 	btnRegistrarse=document.getElementById('btnRegistrar');
 	btnCreditos= document.getElementById('acercaNosotros')
 	btnLoguin=document.getElementById('btnIniciar');
 	btnVolver=document.getElementById('btnAtras');
+	btnEventos=document.getElementById('btnEvento');
+	btnPerfil=document.getElementById('btnPerfil')
+	atras=document.getElementsByClassName('atras');
 	splash=document.getElementById('PantallaSplash');
 	Registrar=document.getElementById('Registrar');
 	Login=document.getElementById('IniciarSesion');
@@ -86,6 +95,7 @@ function asignarEventos()
    rutina.addEventListener("click",rutinaPrincipal);
    btnCreditos.addEventListener("click",IrACreditos);
    btnVolver.addEventListener("click",plash);
+   btnEventos.addEventListener("click",pantallaEvento);
    document.getElementById('inicioRapido').addEventListener("click",pantallaPrincipal);  
    
     
@@ -314,6 +324,18 @@ function IrACreditos()
 	PantallaPrincipal.className="ocultar";
 	PantallaCreditos.className="pantallas";
 	
+}
+
+function pantallaEvento()
+{
+	PantallaBienvenida.className="ocultar";
+	PantallaAplicacion.className="ocultar";
+	PantallaRegistro.className="ocultar";
+	PantallaLoguin.className="ocultar";
+	PantallaPrincipal.className="ocultar";
+	PantallaPrincipal.className="ocultar";
+	PantallaCreditos.className="ocultar";
+	PantallaEventos.className="pantallas";
 }
 
 
