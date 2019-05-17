@@ -96,8 +96,12 @@ function asignarEventos()
    btnCreditos.addEventListener("click",IrACreditos);
    btnVolver.addEventListener("click",plash);
    btnEventos.addEventListener("click",pantallaEvento);
+   for (var i =0; i < atras.length; i++) 
+   {
+   	atras[i].addEventListener("click",pantallaPrincipal);
+    
    document.getElementById('inicioRapido').addEventListener("click",pantallaPrincipal);  
-   
+   }
     
 }
 
