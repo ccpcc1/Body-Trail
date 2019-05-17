@@ -103,7 +103,7 @@ function Registrarse()
 			retos.numRetos=0;
 			retos.RetoMesdiasCompletados=0;
 			retos.RetoMesFechaFin="";
-			retos.RetoMesUltimoDia=""; // se guarda el ultimo dia que se completo el reto
+			retos.RetoMesUltimoDia= new Date(2019,4,15)// se guarda el ultimo dia que se completo el reto
 			Usuario.correo=correo;
 			Usuario.pass=pass;
 			Usuario.retos= retos;
@@ -197,6 +197,20 @@ function agregarARutina(rutina)
 		usuarios[index]=usu[0];
 		localStorage.setItem("Usuarios", JSON.stringify(usuarios));
 	
+}
+
+function ValidarRetoMes()
+{
+	var diaActual= new Date();
+	var ultimoDiaCheck=new Date(usu[0].retos.RetoMesUltimoDia);
+	if(ultimoDiaCheck<diaActual)
+	{
+		console.log("se sube la var de diascompletadosMes");
+	}
+	else
+	{
+		console.log("no se muestra reto del mes");
+	}
 }
 
 function PintarRutina()
