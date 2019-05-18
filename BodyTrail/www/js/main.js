@@ -77,6 +77,7 @@ function inicializar()
 	btnPerfil=document.getElementById('btnPerfil');
 	btnEstadisticas=document.getElementsByClassName('actividad');
 	atras=document.getElementsByClassName('atras');
+	btnPrincipal=document.getElementsByClassName('principio');
 	splash=document.getElementById('PantallaSplash');
 	Registrar=document.getElementById('Registrar');
 	Login=document.getElementById('IniciarSesion');
