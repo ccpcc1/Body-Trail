@@ -14,6 +14,10 @@ var PantallaEstadistica="";
 var PantallaEventos="";
 var PantallaPerfil="";
 var PantallaRetos="";
+var pantallaEvento1="";
+var pantallaEvento2="";
+var pantallaEvento3="";
+var pantallaEvento4="";
 var btncomenzar="";
 var btnVolver="";
 var btnRegistrarse="";
@@ -24,6 +28,11 @@ var btnPerfil="";
 var btnEstadisticas="";
 var atras="";
 var btnPrincipal="";
+var btnEvento1="";
+var btnEvento2="";
+var btnEvento3="";
+var btnEvento4="";
+var btnAtrasEventos="";
 var ejercicios="";
 var rutina="";
 var usu= new Object();
@@ -64,12 +73,21 @@ function inicializar()
 	PantallaPrincipal=document.getElementById('PantallaPrincipal');
 	PantallaCreditos=document.getElementById('Pantallacreditos');
 	PantallaEventos=document.getElementById('PantallaEventos');
+	pantallaEvento1=document.getElementById('PantallaEvento1');
+	pantallaEvento2=document.getElementById('PantallaEvento2');
+	pantallaEvento3=document.getElementById('PantallaEvento3');
+	pantallaEvento4=document.getElementById('PantallaEvento4');
 	pantallaActividad=document.getElementById('PantallaEstadisticas');
 	PantallaPerfil=document.getElementById('PantallaPerfil');
 	PantallaRetos=document.getElementById('');//aqui estaria la pantalla retos
 	btncomenzar=document.getElementById('BienvenidoComenzar');
-
+	btnAtrasEventos=document.getElementsByClassName('bntAtrasEvento');
 	btnRegistrarse=document.getElementById('btnRegistrar');
+	btnEvento1=document.getElementById('EventosEvento1');
+	btnEvento2=document.getElementById('EventosEvento2');
+	btnEvento3=document.getElementById('EventosEvento3');
+	btnEvento4=document.getElementById('EventosEvento4');
+
 	btnCreditos= document.getElementById('acercaNosotros')
 	btnLoguin=document.getElementById('btnIniciar');
 	btnVolver=document.getElementById('btnAtras');
@@ -108,13 +126,10 @@ function asignarEventos()
    btnCreditos.addEventListener("click",IrACreditos);
    btnVolver.addEventListener("click",plash);
    btnEventos.addEventListener("click",pantallaEvento);
-   btnPerfil.addEventListener("click",pantallaPerfiles);
-
+   btnPerfil.addEventListener("click",pantallaPerfiles);   
    for (var i =0; i < atras.length; i++) 
    {
-   	atras[i].addEventListener("click",pantallaPrincipal);
-    
-   document.getElementById('inicioRapido').addEventListener("click",pantallaPrincipal);  
+   	atras[i].addEventListener("click",pantallaPrincipal);    	
    }
 
    for (var i =0; i < btnEstadisticas.length; i++) 
@@ -126,9 +141,15 @@ function asignarEventos()
    {    
      btnPrincipal[i].addEventListener("click",pantallaPrincipal); 
    }
+   for (var i = 0; i < btnAtrasEventos.length; i++) {
+   		btnAtrasEventos[i].addEventListener("click",pantallaEvento);
+   }
+   document.getElementById('inicioRapido').addEventListener("click",pantallaPrincipal);  
+   btnEvento1.addEventListener("click",PantallaEvento1);
+   btnEvento2.addEventListener("click",PantallaEvento2);
+   btnEvento3.addEventListener("click",PantallaEvento3);
+   btnEvento4.addEventListener("click",PantallaEvento4);
 
- 
-    
 }
 
 
@@ -368,6 +389,11 @@ function pantallaEvento()
 	PantallaCreditos.className="ocultar";
 	PantallaEventos.className="pantallas";
 	PantallaPerfil.className="ocultar";
+	pantallaEvento1.className='ocultar';
+	pantallaEvento2.className='ocultar';
+	pantallaEvento3.className='ocultar';
+	pantallaEvento4.className='ocultar';
+	pantallaActividad.className='ocultar';
 }
 
 function PantallaActividad()
@@ -395,6 +421,82 @@ function pantallaPerfiles()
 	PantallaEventos.className="ocultar";
 	pantallaActividad.className="ocultar";
 	PantallaPerfil.className="pantallas";
+}
+
+function PantallaEvento1()
+{
+	pantallaInicio.className='ocultar';
+	PantallaAplicacion.className='ocultar';
+	PantallaBienvenida.className='ocultar';
+	PantallaRegistro.className='ocultar';
+	PantallaLoguin.className='ocultar';
+	PantallaPrincipal.className='ocultar';
+	PantallaCreditos.className='ocultar';
+	PantallaEventos.className='ocultar';
+	pantallaEvento1.className='Pantallas';
+	pantallaEvento2.className='ocultar';
+	pantallaEvento3.className='ocultar';
+	pantallaEvento4.className='ocultar';
+	pantallaActividad.className='ocultar';
+	PantallaPerfil.className='ocultar';
+	//PantallaRetos.className='ocultar';
+}
+
+function PantallaEvento2()
+{
+	pantallaInicio.className='ocultar';
+	PantallaAplicacion.className='ocultar';
+	PantallaBienvenida.className='ocultar';
+	PantallaRegistro.className='ocultar';
+	PantallaLoguin.className='ocultar';
+	PantallaPrincipal.className='ocultar';
+	PantallaCreditos.className='ocultar';
+	PantallaEventos.className='ocultar';
+	pantallaEvento1.className='ocultar';
+	pantallaEvento2.className='Pantallas';
+	pantallaEvento3.className='ocultar';
+	pantallaEvento4.className='ocultar';
+	pantallaActividad.className='ocultar';
+	PantallaPerfil.className='ocultar';
+	//PantallaRetos.className='ocultar';
+}
+
+function PantallaEvento3()
+{
+	pantallaInicio.className='ocultar';
+	PantallaAplicacion.className='ocultar';
+	PantallaBienvenida.className='ocultar';
+	PantallaRegistro.className='ocultar';
+	PantallaLoguin.className='ocultar';
+	PantallaPrincipal.className='ocultar';
+	PantallaCreditos.className='ocultar';
+	PantallaEventos.className='ocultar';
+	pantallaEvento1.className='ocultar';
+	pantallaEvento2.className='ocultar';
+	pantallaEvento3.className='Pantallas';
+	pantallaEvento4.className='ocultar';
+	pantallaActividad.className='ocultar';
+	PantallaPerfil.className='ocultar';
+	//PantallaRetos.className='ocultar';
+}
+
+function PantallaEvento4()
+{
+	pantallaInicio.className='ocultar';
+	PantallaAplicacion.className='ocultar';
+	PantallaBienvenida.className='ocultar';
+	PantallaRegistro.className='ocultar';
+	PantallaLoguin.className='ocultar';
+	PantallaPrincipal.className='ocultar';
+	PantallaCreditos.className='ocultar';
+	PantallaEventos.className='ocultar';
+	pantallaEvento1.className='ocultar';
+	pantallaEvento2.className='ocultar';
+	pantallaEvento3.className='ocultar';
+	pantallaEvento4.className='Pantallas';
+	pantallaActividad.className='ocultar';
+	PantallaPerfil.className='ocultar';
+	//PantallaRetos.className='ocultar';
 }
 
 function ejerciciosfuncion()
