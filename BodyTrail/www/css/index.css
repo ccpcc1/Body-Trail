@@ -774,10 +774,10 @@
 }
 .itembtnMas1
 {
-    position: absolute;
-    left: 277px;
-    max-width: 25px;
-    top: 42px;
+    position: relative;
+    left: 212px;
+    max-width: 24px;
+    top: -88px;
     z-index: 1;
 }
 /**/
