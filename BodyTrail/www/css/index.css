@@ -665,7 +665,85 @@
     z-index: 1;
 }
 
+/*Pantalla ejercicio*/
 
+#EjerDescripcion
+{
+    position: absolute;
+    top: 109px;
+    left: 15px;
+    max-width: 290px;
+}
+
+#EjerAbdomen
+{
+    position: absolute;
+    left: 0px;
+    top: 143px;
+    max-width: 150px;
+}
+
+#EjerPierna
+{
+    position: absolute;
+    left: 170px;
+    top: 143px;
+    max-width: 150px;
+}
+
+#EjerCardio
+{
+    position: absolute;
+    top: 263px;
+    left: 0px;
+    max-width: 150px;
+}
+
+#EjerFuerza
+{
+    position: absolute;
+    left: 170px;
+    max-width: 150px;
+    top: 263px;
+}
+
+#EjerSinImplementos
+{
+    position: absolute;
+    top: 383px;
+    left: 0px;
+    max-width: 320px;
+}
+/*Pantalla adbomen*/
+#abdomenDescripcion
+{
+    position: absolute;
+    top: 169px;
+    left: 12px;
+    max-width: 291px;
+}
+#abdomenbtnComenzar
+{
+    position: absolute;
+    left: 45px;
+    max-width: 229px;
+    top: 211px;
+}
+#abdomentxtTiempo
+{
+    position: absolute;
+    left: 63px;
+    max-width: 82px;
+    top: 170px;
+}
+
+#abdomenTitulo
+{
+    position: absolute;
+    top: 258px;
+    left: 0px;
+    max-width: 320px;
+}
 /**/
 .menu .boton{
     background-color: #0645aa;
