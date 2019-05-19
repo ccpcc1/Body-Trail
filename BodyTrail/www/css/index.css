@@ -745,6 +745,41 @@
     left: 0px;
     max-width: 320px;
 }
+
+.contScroll
+{
+    position: absolute;
+    top: 318px;
+    left: 0px;
+    max-width: 320px;
+    overflow: scroll;
+    height: 172px;
+}
+
+#itemEjercicio1
+{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    max-width: 320px;
+    z-index: 1;
+}
+.itemCheck1
+{
+    position: relative;
+    left: 197px;
+    max-width: 62px;
+    top: -88px;
+    z-index: 1;
+}
+.itembtnMas1
+{
+    position: absolute;
+    left: 277px;
+    max-width: 25px;
+    top: 42px;
+    z-index: 1;
+}
 /**/
 .menu .boton{
     background-color: #0645aa;
