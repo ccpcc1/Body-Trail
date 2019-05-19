@@ -392,6 +392,12 @@ function pantallaPrincipal()
 	pantallaActividad.className="ocultar"
 	PantallaEventos.className="ocultar";
 	PantallaPerfil.className="ocultar";
+	PantallaFuerza.className="ocultar";
+	PantallaAbd.className="ocultar";
+	PantallaPierna.className="ocultar";
+	PantallaCardio.className="ocultar";	
+	PantallaSinImp.className="ocultar";
+	PantallaEjercicio.className="ocultar";	
 }
 
 function IrACreditos()
