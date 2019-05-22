@@ -44,6 +44,8 @@ var rutina="";
 var usu= new Object();
 let usuarios;
 var index=-1;
+var btnAddEjercicio="";
+var clickeado=false;
 
 
 
@@ -101,18 +103,19 @@ function inicializar()
 	btnCreditos= document.getElementById('acercaNosotros')
 	btnLoguin=document.getElementById('btnIniciar');
 	btnVolver=document.getElementById('btnAtras');
-	btnEventos=document.getElementsByClassName('btnEventos');
 	btnAbdomen=document.getElementById('EjerAbdomen');
 	btnSinImp=document.getElementById('EjerSinImplementos');
 	btnPierna=document.getElementById('EjerPierna');
 	btnCardio=document.getElementById('EjerCardio');
 	btnFuerza=document.getElementById('EjerFuerza');
 	atras=document.getElementsByClassName('atras');
+	btnEventos=document.getElementsByClassName('btnEventos');
 	btnPrincipal=document.getElementsByClassName('principio');
 	btnEstadisticas=document.getElementsByClassName('actividad');
 	btnAtrasEjercicios=document.getElementsByClassName('AtrasEjercicios');
 	btnAtrasEventos=document.getElementsByClassName('bntAtrasEvento');
 	btnPerfil=document.getElementsByClassName('btnPerfil');
+	btnAddEjercicio=document.getElementsByClassName('itembtnMas1');
 	splash=document.getElementById('PantallaSplash');
 	Registrar=document.getElementById('Registrar');
 	Login=document.getElementById('IniciarSesion');
@@ -174,6 +177,8 @@ function asignarEventos()
    		btnEventos[i].addEventListener("click",pantallaEvento);
    }
 
+   
+
    document.getElementById('inicioRapido').addEventListener("click",pantallaPrincipal);  
    btnEvento1.addEventListener("click",PantallaEvento1);
    btnEvento2.addEventListener("click",PantallaEvento2);
@@ -185,6 +190,11 @@ function asignarEventos()
    btnCardio.addEventListener("click",pantallaCardio);
    btnSinImp.addEventListener("click",pantallaSinImpl);
    ejercicios.addEventListener("click",pantallaEjercicios);
+
+
+
+
+
 
 }
 
@@ -273,7 +283,8 @@ function Loguin()
 
 function agregarARutina(rutina)
 {
-	//mejorar el for se puede hacer en el loguin para solo hacerlo una vez.
+	
+
 	var correo = usu[0].correo;
 	var usuario= new Object();
 	
@@ -293,6 +304,8 @@ function agregarARutina(rutina)
 	
 		usuarios[index]=usu[0];
 		localStorage.setItem("Usuarios", JSON.stringify(usuarios));
+	
+	
 	
 }
 
