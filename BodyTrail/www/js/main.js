@@ -329,8 +329,10 @@ function PintarRutina()
 	if (usu[0].hasOwnProperty('rutina'))
 		{
 			//se recorre el arreglo de rutinas	
-			for (i=0; i< usu[0].rutina.length; i++) {
+			for (i=0; i< usu[0].rutina.length; i++) 
+			{
 				$("#seccionPrueba").append("<img src='img/Pantallas/ejerciciosdisponibles/"+usu[0].rutina[i]+".png' id='imgprueba'>");
+				$("#seccionPrueba").append("<img src='img/Pantallas/ejerciciosdisponibles/"+usu[0].rutina[i]+".gif' class='ocultar' id='imgprueba'>  ");
 			}
 			
 			

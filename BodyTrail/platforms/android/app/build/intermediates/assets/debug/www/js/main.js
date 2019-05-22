@@ -330,7 +330,8 @@ function PintarRutina()
 		{
 			//se recorre el arreglo de rutinas	
 			for (i=0; i< usu[0].rutina.length; i++) {
-				$("#seccionPrueba").append("<img src='img/Pantallas/ejerciciosdisponibles/"+usu[0].rutina[i]+".png' id='imgprueba'>");
+				$("#seccionPrueba").append("<a>"+usu[0].rutina[i]+"</a>");
+				//temporalmente para probar$("#seccionPrueba").append("<img src='img/Pantallas/ejerciciosdisponibles/"+usu[0].rutina[i]+".png' id='imgprueba'>");
 			}
 			
 			
@@ -425,7 +426,8 @@ function pantallaPrincipal()
 	PantallaPierna.className="ocultar";
 	PantallaCardio.className="ocultar";	
 	PantallaSinImp.className="ocultar";
-	PantallaEjercicio.className="ocultar";		
+	PantallaEjercicio.className="ocultar";
+	PintarRutina();		
 }
 
 function IrACreditos()
