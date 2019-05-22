@@ -819,6 +819,10 @@
     font-size:0;
     border:none;
 }
+.mostrargif
+{
+    display: block;
+}
 /**/
 .menu .boton{
     background-color: #0645aa;
