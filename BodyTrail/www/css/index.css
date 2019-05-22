@@ -780,6 +780,45 @@
     top: -88px;
     z-index: 1;
 }
+/*pantalla rutina*/
+#descripcionRutina
+{
+    position: absolute;
+    left: 15px;
+    max-width: 302px;
+    top: 100px;
+}
+#RutinaDivEjer
+{
+    top: 137px;
+    position: absolute;
+    max-height: 360px;
+    overflow: scroll;
+    line-height: 0;
+    font-size:0;
+}
+
+#imgGif
+{
+    position: relative;
+    left: 3px;
+    max-width: 320px;
+    top: -127px;
+    z-index: 1;
+    background: white;
+    font-size:0;
+
+}
+#imgejPng
+{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    max-width: 320px;
+    z-index: 1;
+    font-size:0;
+    border:none;
+}
 /**/
 .menu .boton{
     background-color: #0645aa;
@@ -803,16 +842,6 @@
     background-color: #3474db;
 }
 
-#seccionPrueba
-{
-    top: 100px;
-    position: absolute;
-    max-height: 369px;
-    overflow: scroll;
-}
 
-#imgprueba
-{
-    max-width: 250px;
-    display: block;
-}
+
+

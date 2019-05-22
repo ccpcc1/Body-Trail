@@ -1,5 +1,6 @@
 //funciones con inicial btn son para la navegacion de una ventana a otra;
 window.onload = inicio;
+var isrutina=true;
 var pantallaInicio="";
 var splash="";
 var Registrar="";
@@ -19,6 +20,7 @@ var pantallaEvento2="";
 var pantallaEvento3="";
 var pantallaEvento4="";
 var PantalllaEjercicios="";
+var PantallaMirutina="";
 var btncomenzar="";
 var btnVolver="";
 var btnRegistrarse="";
@@ -26,6 +28,7 @@ var btnLoguin="";
 var btnCreditos="";
 var btnEventos="";
 var btnPerfil="";
+var btnRutina="";
 var btnEstadisticas="";
 var atras="";
 var btnPrincipal="";
@@ -40,15 +43,11 @@ var btnPierna="";
 var btnSinImp="";
 var btnAtrasEventos="";
 var btnAtrasEjercicios="";
-var rutina="";
 var usu= new Object();
 let usuarios;
 var index=-1;
+var ejercioEnEspera="";
 var btnAddEjercicio="";
-var clickeado=false;
-
-
-
 
 function inicio()
 {
@@ -93,6 +92,7 @@ function inicializar()
 	PantallaPierna=document.getElementById('PantallaPierna');
 	PantallaSinIMp=document.getElementById('PantallaSinImp');	
 	PantalllaEjercicios=document.getElementById('PantallaEjercicio');
+	PantallaMirutina=document.getElementById('PantallaRutina');
 	PantallaRetos=document.getElementById('');//aqui estaria la pantalla retos
 	btncomenzar=document.getElementById('BienvenidoComenzar');	
 	btnRegistrarse=document.getElementById('btnRegistrar');
@@ -114,13 +114,14 @@ function inicializar()
 	btnEstadisticas=document.getElementsByClassName('actividad');
 	btnAtrasEjercicios=document.getElementsByClassName('AtrasEjercicios');
 	btnAtrasEventos=document.getElementsByClassName('bntAtrasEvento');
+	ejercioEnEspera=document.getElementsByClassName('ejercioEnEspera');
 	btnPerfil=document.getElementsByClassName('btnPerfil');
+	btnRutina=document.getElementsByClassName('IrRutina');
 	btnAddEjercicio=document.getElementsByClassName('itembtnMas1');
 	splash=document.getElementById('PantallaSplash');
 	Registrar=document.getElementById('Registrar');
 	Login=document.getElementById('IniciarSesion');
-	ejercicios=document.getElementById('textoEjercicio');
-	rutina=document.getElementById('TextoRutina');
+	ejercicios=document.getElementsByClassName('IrEjercicio');
 	principalpantalla.className="ocultar";
 	persona.className="ocultar";
 	$('#barraCarga').jQMeter({
@@ -140,8 +141,6 @@ function asignarEventos()
    btncomenzar.addEventListener("click",PantallaInicio);
    btnLoguin.addEventListener("click",PantallaIniciarSesion);
    btnRegistrarse.addEventListener("click",PantallaRegistrarse);
-   ejercicios.addEventListener("click",ejerciciosPrincipal);
-   rutina.addEventListener("click",rutinaPrincipal);
    btnCreditos.addEventListener("click",IrACreditos);
    btnVolver.addEventListener("click",plash);
    for (var i =0; i < atras.length; i++) 
@@ -176,6 +175,15 @@ function asignarEventos()
    {
    		btnEventos[i].addEventListener("click",pantallaEvento);
    }
+    for (var i = 0; i < btnRutina.length; i++)
+   {
+   		btnRutina[i].addEventListener("click",Pantallarutina);
+   }
+    for (var i = 0; i < ejercicios.length; i++)
+   {
+   		ejercicios[i].addEventListener("click",pantallaEjercicios);
+   }
+
 
    
 
@@ -189,7 +197,7 @@ function asignarEventos()
    btnPierna.addEventListener("click",pantallaPierna);
    btnCardio.addEventListener("click",pantallaCardio);
    btnSinImp.addEventListener("click",pantallaSinImpl);
-   ejercicios.addEventListener("click",pantallaEjercicios);
+
 
 
 
@@ -325,41 +333,28 @@ function ValidarRetoMes()
 
 function PintarRutina()
 {
-	var i = 0
-	if (usu[0].hasOwnProperty('rutina'))
-		{
-			//se recorre el arreglo de rutinas	
-			for (i=0; i< usu[0].rutina.length; i++) 
+	if (isrutina==true) 
+	{
+		var i = 0
+		if (usu[0].hasOwnProperty('rutina'))
 			{
-				$("#seccionPrueba").append("<img src='img/Pantallas/ejerciciosdisponibles/"+usu[0].rutina[i]+".png' id='imgprueba'>");
-				$("#seccionPrueba").append("<img src='img/Pantallas/ejerciciosdisponibles/"+usu[0].rutina[i]+".gif' class='ocultar' id='imgprueba'>  ");
+				//se recorre el arreglo de rutinas	
+				for (i=0; i< usu[0].rutina.length; i++) 
+				{
+					$("#RutinaDivEjer").append("<div><img src='img/Pantallas/ejerciciosdisponibles/"+usu[0].rutina[i]+".png' id='imgejPng'></div>");
+					$("#RutinaDivEjer").append("<img src='img/Pantallas/ejerciciosdisponibles/"+usu[0].rutina[i]+".gif' class='ocultar ejercioEnEspera' id='imgGif'>  ");
+				}												
 			}
-			
-			
-			
-		}
-		else
-		{		
-			//significa que no tiene ningun ejercicio en su rutina
-		}
-}
-
-
-
-function ejerciciosPrincipal()
-{
-	document.getElementById('barraSeleccion').className="";
-	document.getElementById('barraSeleccion2').className="ocultar";
-
-	
-}
-
-function rutinaPrincipal()
-{
-	document.getElementById('barraSeleccion').className="ocultar";
-	document.getElementById('barraSeleccion2').className="";
+			else
+			{		
+				//significa que no tiene ningun ejercicio en su rutina
+			}
+		isrutina=false;
+	}
 
 }
+
+
 
 //Seccion de pantallas
 
@@ -427,7 +422,8 @@ function pantallaPrincipal()
 	PantallaPierna.className="ocultar";
 	PantallaCardio.className="ocultar";	
 	PantallaSinImp.className="ocultar";
-	PantallaEjercicio.className="ocultar";		
+	PantallaEjercicio.className="ocultar";
+	PantallaMirutina.className="ocultar";			
 }
 
 function IrACreditos()
@@ -464,7 +460,8 @@ function pantallaEvento()
 	PantallaPierna.className="ocultar";
 	PantallaCardio.className="ocultar";	
 	PantallaSinImp.className="ocultar";
-	PantallaEjercicio.className="ocultar";	
+	PantallaEjercicio.className="ocultar";
+	PantallaMirutina.className="ocultar";		
 }
 
 function PantallaActividad()
@@ -484,7 +481,8 @@ function PantallaActividad()
 	PantallaPierna.className="ocultar";
 	PantallaCardio.className="ocultar";	
 	PantallaSinImp.className="ocultar";
-	PantallaEjercicio.className="ocultar";	
+	PantallaEjercicio.className="ocultar";
+	PantallaMirutina.className="ocultar";		
 
 }
 
@@ -504,7 +502,8 @@ function pantallaPerfiles()
 	PantallaPierna.className="ocultar";
 	PantallaCardio.className="ocultar";	
 	PantallaSinImp.className="ocultar";
-	PantallaEjercicio.className="ocultar";	
+	PantallaEjercicio.className="ocultar";
+	PantallaMirutina.className="ocultar";		
 }
 
 function PantallaEvento1()
@@ -624,7 +623,8 @@ function pantallaEjercicios()
 	PantallaPierna.className="ocultar";
 	PantallaCardio.className="ocultar";	
 	PantallaSinImp.className="ocultar";
-	PantallaEjercicio.className="Pantallas";	
+	PantallaEjercicio.className="Pantallas";
+	PantallaMirutina.className="ocultar";		
 }
 function pantallaFuerza()
 {
@@ -743,31 +743,17 @@ function pantallaCardio()
 	PantallaPierna.className="ocultar";
 	PantallaCardio.className="Pantallas";	
 	PantallaSinImp.className="ocultar";
-	PantallaEjercicio.className="ocultar";	
+	PantallaEjercicio.className="ocultar";
 
 }
 
 
-function ejerciciosfuncion()
+function Pantallarutina()
 {
-	ejercicios.className="pantalladeejercicios bounceIn";
-	principalpantalla.className="ocultar";
-	persona.className="ocultar";
-	PantallaPrincipal.className="ocultar";
-}
-
-function eventosfuncion(){
-	ejerciciosfuncion.className="ocultar";
-	principalpantalla.className="menuprincipal bounceIn";
-	persona.className="ocultar";
-	PantallaPrincipal.className="ocultar";
-}
-
-function perfilfuncion(){
-	ejerciciosfuncion.className="ocultar";
-	principalpantalla.className="ocultar";
-	persona.className="perfil bounceIn";
-	PantallaPrincipal.className="ocultar";
+	PantallaPrincipal.className='ocultar';
+	PantallaEjercicio.className="ocultar";
+	PantallaMirutina.className="Pantallas";
+	PintarRutina();
 }
 
 
