@@ -501,6 +501,7 @@
     top: 106px;
     left: 61px;
     max-width: 200px;
+    
 }
 
 #bntAtrasPerfil
@@ -665,7 +666,120 @@
     z-index: 1;
 }
 
+/*Pantalla ejercicio*/
 
+#EjerDescripcion
+{
+    position: absolute;
+    top: 109px;
+    left: 15px;
+    max-width: 290px;
+}
+
+#EjerAbdomen
+{
+    position: absolute;
+    left: 0px;
+    top: 143px;
+    max-width: 150px;
+}
+
+#EjerPierna
+{
+    position: absolute;
+    left: 170px;
+    top: 143px;
+    max-width: 150px;
+}
+
+#EjerCardio
+{
+    position: absolute;
+    top: 263px;
+    left: 0px;
+    max-width: 150px;
+}
+
+#EjerFuerza
+{
+    position: absolute;
+    left: 170px;
+    max-width: 150px;
+    top: 263px;
+}
+
+#EjerSinImplementos
+{
+    position: absolute;
+    top: 383px;
+    left: 0px;
+    max-width: 320px;
+}
+/*Pantalla adbomen*/
+#abdomenDescripcion
+{
+    position: absolute;
+    top: 169px;
+    left: 12px;
+    max-width: 291px;
+}
+.abdomenbtnComenzar
+{
+    position: absolute;
+    left: 45px;
+    max-width: 229px;
+    top: 237px;
+}
+#abdomentxtTiempo
+{
+    position: absolute;
+    left: 63px;
+    max-width: 82px;
+    top: 206px;
+}
+
+#abdomenTitulo
+{
+    position: absolute;
+    top: 282px;
+    left: 0px;
+    max-width: 320px;
+}
+
+.contScroll
+{
+    position: absolute;
+    top: 318px;
+    left: 0px;
+    max-width: 320px;
+    overflow: scroll;
+    height: 172px;
+}
+
+#itemEjercicio1
+{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    max-width: 320px;
+    z-index: 1;
+}
+.itemCheck1
+{
+    position: relative;
+    left: 197px;
+    max-width: 62px;
+    top: -88px;
+    z-index: 1;
+}
+.itembtnMas1
+{
+    position: relative;
+    left: 212px;
+    max-width: 24px;
+    top: -88px;
+    z-index: 1;
+}
 /**/
 .menu .boton{
     background-color: #0645aa;

@@ -101,8 +101,7 @@ function inicializar()
 	btnCreditos= document.getElementById('acercaNosotros')
 	btnLoguin=document.getElementById('btnIniciar');
 	btnVolver=document.getElementById('btnAtras');
-	btnEventos=document.getElementById('btnEvento');
-	btnPerfil=document.getElementById('btnPerfil');
+	btnEventos=document.getElementsByClassName('btnEventos');
 	btnAbdomen=document.getElementById('EjerAbdomen');
 	btnSinImp=document.getElementById('EjerSinImplementos');
 	btnPierna=document.getElementById('EjerPierna');
@@ -113,6 +112,7 @@ function inicializar()
 	btnEstadisticas=document.getElementsByClassName('actividad');
 	btnAtrasEjercicios=document.getElementsByClassName('AtrasEjercicios');
 	btnAtrasEventos=document.getElementsByClassName('bntAtrasEvento');
+	btnPerfil=document.getElementsByClassName('btnPerfil');
 	splash=document.getElementById('PantallaSplash');
 	Registrar=document.getElementById('Registrar');
 	Login=document.getElementById('IniciarSesion');
@@ -141,21 +141,19 @@ function asignarEventos()
    rutina.addEventListener("click",rutinaPrincipal);
    btnCreditos.addEventListener("click",IrACreditos);
    btnVolver.addEventListener("click",plash);
-   btnEventos.addEventListener("click",pantallaEvento);
-   btnPerfil.addEventListener("click",pantallaPerfiles);   
    for (var i =0; i < atras.length; i++) 
    {
-   	atras[i].addEventListener("click",pantallaPrincipal);    	
+   		atras[i].addEventListener("click",pantallaPrincipal);    	
    }
 
    for (var i =0; i < btnEstadisticas.length; i++) 
    {    
-     btnEstadisticas[i].addEventListener("click",PantallaActividad); 
+     	btnEstadisticas[i].addEventListener("click",PantallaActividad); 
    }
 
    for (var i =0; i < btnPrincipal.length; i++) 
    {    
-     btnPrincipal[i].addEventListener("click",pantallaPrincipal); 
+     	btnPrincipal[i].addEventListener("click",pantallaPrincipal); 
    }
    for (var i = 0; i < btnAtrasEventos.length; i++) 
    {
@@ -164,8 +162,18 @@ function asignarEventos()
 
    for (var i = 0; i < btnAtrasEjercicios.length; i++)
    {
-   	btnAtrasEjercicios[i].addEventListener("click",pantallaEjercicios);
+   		btnAtrasEjercicios[i].addEventListener("click",pantallaEjercicios);
    }
+
+   for (var i = 0; i < btnPerfil.length; i++)
+   {
+   		btnPerfil[i].addEventListener("click",pantallaPerfiles);
+   }
+   for (var i = 0; i < btnEventos.length; i++)
+   {
+   		btnEventos[i].addEventListener("click",pantallaEvento);
+   }
+
    document.getElementById('inicioRapido').addEventListener("click",pantallaPrincipal);  
    btnEvento1.addEventListener("click",PantallaEvento1);
    btnEvento2.addEventListener("click",PantallaEvento2);
@@ -397,7 +405,14 @@ function pantallaPrincipal()
 	PantallaPierna.className="ocultar";
 	PantallaCardio.className="ocultar";	
 	PantallaSinImp.className="ocultar";
-	PantallaEjercicio.className="ocultar";	
+	PantallaEjercicio.className="ocultar";
+	PantallaPerfil.className='ocultar';
+	PantallaFuerza.className="ocultar";
+	PantallaAbd.className="ocultar";
+	PantallaPierna.className="ocultar";
+	PantallaCardio.className="ocultar";	
+	PantallaSinImp.className="ocultar";
+	PantallaEjercicio.className="ocultar";		
 }
 
 function IrACreditos()
@@ -428,6 +443,13 @@ function pantallaEvento()
 	pantallaEvento3.className='ocultar';
 	pantallaEvento4.className='ocultar';
 	pantallaActividad.className='ocultar';
+	PantallaPerfil.className='ocultar';
+	PantallaFuerza.className="ocultar";
+	PantallaAbd.className="ocultar";
+	PantallaPierna.className="ocultar";
+	PantallaCardio.className="ocultar";	
+	PantallaSinImp.className="ocultar";
+	PantallaEjercicio.className="ocultar";	
 }
 
 function PantallaActividad()
@@ -441,6 +463,13 @@ function PantallaActividad()
 	PantallaEventos.className="ocultar";
 	pantallaActividad.className="Pantallas";
 	PantallaPerfil.className="ocultar";
+	PantallaPerfil.className='ocultar';
+	PantallaFuerza.className="ocultar";
+	PantallaAbd.className="ocultar";
+	PantallaPierna.className="ocultar";
+	PantallaCardio.className="ocultar";	
+	PantallaSinImp.className="ocultar";
+	PantallaEjercicio.className="ocultar";	
 
 }
 
@@ -455,6 +484,12 @@ function pantallaPerfiles()
 	PantallaEventos.className="ocultar";
 	pantallaActividad.className="ocultar";
 	PantallaPerfil.className="pantallas";
+	PantallaFuerza.className="ocultar";
+	PantallaAbd.className="ocultar";
+	PantallaPierna.className="ocultar";
+	PantallaCardio.className="ocultar";	
+	PantallaSinImp.className="ocultar";
+	PantallaEjercicio.className="ocultar";	
 }
 
 function PantallaEvento1()
@@ -493,6 +528,13 @@ function PantallaEvento2()
 	pantallaActividad.className='ocultar';
 	PantallaPerfil.className='ocultar';
 	//PantallaRetos.className='ocultar';
+	PantallaPerfil.className='ocultar';
+	PantallaFuerza.className="ocultar";
+	PantallaAbd.className="ocultar";
+	PantallaPierna.className="ocultar";
+	PantallaCardio.className="ocultar";	
+	PantallaSinImp.className="ocultar";
+	PantallaEjercicio.className="ocultar";	
 }
 
 function PantallaEvento3()
@@ -512,6 +554,13 @@ function PantallaEvento3()
 	pantallaActividad.className='ocultar';
 	PantallaPerfil.className='ocultar';
 	//PantallaRetos.className='ocultar';
+	PantallaPerfil.className='ocultar';
+	PantallaFuerza.className="ocultar";
+	PantallaAbd.className="ocultar";
+	PantallaPierna.className="ocultar";
+	PantallaCardio.className="ocultar";	
+	PantallaSinImp.className="ocultar";
+	PantallaEjercicio.className="ocultar";	
 }
 
 function PantallaEvento4()
@@ -530,6 +579,12 @@ function PantallaEvento4()
 	pantallaEvento4.className='Pantallas';
 	pantallaActividad.className='ocultar';
 	PantallaPerfil.className='ocultar';
+	PantallaFuerza.className="ocultar";
+	PantallaAbd.className="ocultar";
+	PantallaPierna.className="ocultar";
+	PantallaCardio.className="ocultar";	
+	PantallaSinImp.className="ocultar";
+	PantallaEjercicio.className="ocultar";	
 	//PantallaRetos.className='ocultar';
 }
 
