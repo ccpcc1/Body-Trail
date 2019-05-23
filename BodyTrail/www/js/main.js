@@ -1,5 +1,6 @@
 //funciones con inicial btn son para la navegacion de una ventana a otra;
 window.onload = inicio;
+var contador=0;
 var isrutina=true;
 var pantallaInicio="";
 var splash="";
@@ -352,19 +353,21 @@ function PintarRutina()
 
 }
 
-function EjecutarEjercicio(i)
+function EjecutarEjercicio()
 {
-	ejercioEnEspera[i].className="mostrargif ejercioEnEspera";
+	if (contador<ejercioEnEspera.length) 
+	{
+		ejercioEnEspera[contador].className="mostrargif ejercioEnEspera";
+		contador++;
+		setTimeout(setTimeout(EjecutarEjercicio,40000),5000);
+	}
+	
 }
 
-function bodyTrailRutina()
+
+function correrejercicios(ejercicios)
 {
-	for (var i = 0; i < ejercioEnEspera.length; i++)
-   {
 
-   		setTimeout(EjecutarEjercicio(i),40000*(i+1));  			
-
-   }
 }
 
 //Seccion de pantallas
