@@ -1,6 +1,8 @@
 //funciones con inicial btn son para la navegacion de una ventana a otra;
 window.onload = inicio;
+var cronometrando=[];
 var contador=0;
+var tiempo=39;
 var isrutina=true;
 var pantallaInicio="";
 var splash="";
@@ -48,6 +50,7 @@ var usu= new Object();
 let usuarios;
 var index=-1;
 var ejercioEnEspera="";
+var cronometrosRutina;
 var btnAddEjercicio="";
 
 function inicio()
@@ -116,6 +119,7 @@ function inicializar()
 	btnAtrasEjercicios=document.getElementsByClassName('AtrasEjercicios');
 	btnAtrasEventos=document.getElementsByClassName('bntAtrasEvento');
 	ejercioEnEspera=document.getElementsByClassName('ejercioEnEspera');
+	cronometrosRutina=document.getElementsByClassName('lblTiempoRutina');
 	btnPerfil=document.getElementsByClassName('btnPerfil');
 	btnRutina=document.getElementsByClassName('IrRutina');
 	btnAddEjercicio=document.getElementsByClassName('itembtnMas1');
@@ -342,7 +346,7 @@ function PintarRutina()
 				//se recorre el arreglo de rutinas	
 				for (i=0; i< usu[0].rutina.length; i++) 
 				{
-					$("#RutinaDivEjer").append("<div class='contenedorEjericicio'><img src='img/Pantallas/ejerciciosdisponibles/"+usu[0].rutina[i]+".png' id='imgejPng'> <img src='img/Pantallas/ejerciciosdisponibles/"+usu[0].rutina[i]+".gif' class='ocultar ejercioEnEspera' id='imgGif'><label id='BienvenidoTitulo'>00</label></div>");
+					$("#RutinaDivEjer").append("<div class='contenedorEjericicio'><img src='img/Pantallas/ejerciciosdisponibles/"+usu[0].rutina[i]+".png' id='imgejPng'> <img src='img/Pantallas/ejerciciosdisponibles/"+usu[0].rutina[i]+".gif' class='ocultar ejercioEnEspera' id='imgGif'> <strong  class='lblTiempoRutina'>40</strong></div>");
 				}												
 			}
 			else
@@ -374,13 +378,17 @@ function EjecutarEjercicio()
 	{
 		setTimeout(function()
 			{
+
 				ejercioEnEspera[contador].className="mostrargif ejercioEnEspera";
 				contador++;
+				tiempo=39;
+				CronometroRutina();
 			},5000);
 		
 		setTimeout(function()
 		{
 			EjecutarEjercicio();
+			
 			if(contador>0)
 			{
 				ejercioEnEspera[contador-1].parentNode.className="ocultar contenedorEjericicio";
@@ -388,9 +396,44 @@ function EjecutarEjercicio()
 			}
 		}
 
-			,10000)
+			,45000)
 		
 	}
+	
+}
+
+function CronometroRutina()
+{
+	if (contador<ejercioEnEspera.length+1) 
+	{
+		cronometrando[contador-1]=setTimeout(function()
+			{
+				if(tiempo>=0)
+				{
+					clearTimeout(cronometrando[contador-1]);
+					cronometrosRutina[contador-1].innerText="00";	
+				}
+				if (tiempo<10)
+				{
+					
+					cronometrosRutina[contador-1].innerText="0"+tiempo;					 
+					tiempo--;
+					CronometroRutina();
+				}
+				else
+				{
+					cronometrosRutina[contador-1].className="lblTiempoRutina arreglarlbl";
+					cronometrosRutina[contador-1].innerText=tiempo;
+					tiempo--;
+					CronometroRutina();
+				}
+				
+				
+			},1000);
+		
+		
+	}
+
 	
 }
 

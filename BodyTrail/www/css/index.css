@@ -1,4 +1,10 @@
 /*codigo general*/
+@font-face
+{
+   font-family:Arista2;
+   src: url(tipografia/Arista2.0Alternate.ttf);
+}
+
 .ocultar{
     display: none;
 }
@@ -839,6 +845,27 @@
     border:none;
     max-height: 127px;
 }
+
+.lblTiempoRutina
+{
+    max-width: 283px;
+    position: relative;
+    left: -73px;
+    top: -44px;
+    z-index: 4;
+    background: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 6px 1px;
+    font-family: Arista2;
+    color: black;
+}
+.arreglarlbl
+{
+    left: 245px !important;
+    top: -233px !important;
+}
+
 .mostrargif
 {
     display: block;
