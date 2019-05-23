@@ -231,10 +231,9 @@ function Registrarse()
 			}
 			else
 			{
-				//toda cambiarlo para que vaya a otra pantalla
 				usuarios.push(Usuario);
 				localStorage.setItem("Usuarios", JSON.stringify(usuarios));
-				//alert("Usuario Registrado");
+				//alert("Usuario registrado con exito");
 				PantallaIniciarSesion();    
 				
 			}
@@ -341,8 +340,7 @@ function PintarRutina()
 				//se recorre el arreglo de rutinas	
 				for (i=0; i< usu[0].rutina.length; i++) 
 				{
-					$("#RutinaDivEjer").append("<div><img src='img/Pantallas/ejerciciosdisponibles/"+usu[0].rutina[i]+".png' id='imgejPng'></div>");
-					$("#RutinaDivEjer").append("<img src='img/Pantallas/ejerciciosdisponibles/"+usu[0].rutina[i]+".gif' class='ocultar ejercioEnEspera' id='imgGif'>  ");
+					$("#RutinaDivEjer").append("<div class='contenedorEjericicio'><img src='img/Pantallas/ejerciciosdisponibles/"+usu[0].rutina[i]+".png' id='imgejPng'> <img src='img/Pantallas/ejerciciosdisponibles/"+usu[0].rutina[i]+".gif' class='ocultar ejercioEnEspera' id='imgGif'><label id='BienvenidoTitulo'>00</label></div>");
 				}												
 			}
 			else
@@ -354,7 +352,20 @@ function PintarRutina()
 
 }
 
+function EjecutarEjercicio(i)
+{
+	ejercioEnEspera[i].className="mostrargif ejercioEnEspera";
+}
 
+function bodyTrailRutina()
+{
+	for (var i = 0; i < ejercioEnEspera.length; i++)
+   {
+
+   		setTimeout(EjecutarEjercicio(i),40000*(i+1));  			
+
+   }
+}
 
 //Seccion de pantallas
 

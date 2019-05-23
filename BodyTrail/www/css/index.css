@@ -755,6 +755,15 @@
     overflow: scroll;
     height: 172px;
 }
+.ocultarGif
+{
+    position: relative;
+    top: -122px;
+    left: -10px;
+    max-width: 200px;
+    z-index: -1;
+    background: white;
+}
 
 #itemEjercicio1
 {
@@ -767,18 +776,20 @@
 .itemCheck1
 {
     position: relative;
-    left: 197px;
+    left: 10px;
     max-width: 62px;
-    top: -88px;
+    top: -132px;
     z-index: 1;
+
 }
 .itembtnMas1
 {
     position: relative;
-    left: 212px;
-    max-width: 24px;
-    top: -88px;
+    left: 28px;
+    max-width: 28px;
+    top: -131px;
     z-index: 1;
+
 }
 /*pantalla rutina*/
 #descripcionRutina
@@ -792,7 +803,7 @@
 {
     top: 137px;
     position: absolute;
-    max-height: 360px;
+    max-height: 355px;
     overflow: scroll;
     line-height: 0;
     font-size:0;
@@ -822,6 +833,11 @@
 .mostrargif
 {
     display: block;
+}
+
+.contenedorEjericicio
+{
+    max-height: 127px;
 }
 /**/
 .menu .boton{
