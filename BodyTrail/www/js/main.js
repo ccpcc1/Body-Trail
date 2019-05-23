@@ -144,6 +144,7 @@ function asignarEventos()
    btnRegistrarse.addEventListener("click",PantallaRegistrarse);
    btnCreditos.addEventListener("click",IrACreditos);
    btnVolver.addEventListener("click",plash);
+   document.getElementById('btnComenzarRutina').addEventListener("click",EjecutarEjercicio);
    for (var i =0; i < atras.length; i++) 
    {
    		atras[i].addEventListener("click",pantallaPrincipal);    	
@@ -353,15 +354,49 @@ function PintarRutina()
 
 }
 
+function resetRutina()
+{
+	if (ejercioEnEspera.length>0 && contador==ejercioEnEspera.length)
+	{
+			for (var i = 0; i <ejercioEnEspera.length;i++)
+			{
+				ejercioEnEspera[i].parentNode.className="contenedorEjericicio";
+				ejercioEnEspera[i].className="ocultar ejercioEnEspera";
+			}
+			contador=0;
+	}
+
+}
+
 function EjecutarEjercicio()
 {
 	if (contador<ejercioEnEspera.length) 
 	{
-		ejercioEnEspera[contador].className="mostrargif ejercioEnEspera";
-		contador++;
-		setTimeout(setTimeout(EjecutarEjercicio,40000),5000);
+		setTimeout(function()
+			{
+				ejercioEnEspera[contador].className="mostrargif ejercioEnEspera";
+				contador++;
+			},5000);
+		
+		setTimeout(function()
+		{
+			EjecutarEjercicio();
+			if(contador>0)
+			{
+				ejercioEnEspera[contador-1].parentNode.className="ocultar contenedorEjericicio";
+				ejercioEnEspera[contador-1].className="ocultar ejercioEnEspera";
+			}
+		}
+
+			,10000)
+		
 	}
 	
+}
+
+function Cronometro()
+{
+
 }
 
 
@@ -768,6 +803,7 @@ function Pantallarutina()
 	PantallaEjercicio.className="ocultar";
 	PantallaMirutina.className="Pantallas";
 	PintarRutina();
+	resetRutina();
 }
 
 

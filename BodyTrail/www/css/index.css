@@ -799,14 +799,22 @@
     max-width: 302px;
     top: 100px;
 }
+
+#btnComenzarRutina
+{
+    position: absolute;
+    left: 45px;
+    max-width: 229px;
+    top: 137px;
+}
 #RutinaDivEjer
 {
-    top: 137px;
+    top: 171px;
     position: absolute;
-    max-height: 355px;
+    max-height: 316px;
     overflow: scroll;
     line-height: 0;
-    font-size:0;
+    font-size: 0;
 }
 
 #imgGif
@@ -829,6 +837,7 @@
     z-index: 1;
     font-size:0;
     border:none;
+    max-height: 127px;
 }
 .mostrargif
 {
@@ -838,6 +847,7 @@
 .contenedorEjericicio
 {
     max-height: 127px;
+
 }
 /**/
 .menu .boton{
