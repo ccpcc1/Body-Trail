@@ -52,6 +52,7 @@ var index=-1;
 var ejercioEnEspera="";
 var cronometrosRutina;
 var btnAddEjercicio="";
+var checkejercicio
 
 function inicio()
 {
@@ -123,6 +124,7 @@ function inicializar()
 	btnPerfil=document.getElementsByClassName('btnPerfil');
 	btnRutina=document.getElementsByClassName('IrRutina');
 	btnAddEjercicio=document.getElementsByClassName('itembtnMas1');
+	checkejercicio=document.getElementsByClassName('itemCheck1');
 	splash=document.getElementById('PantallaSplash');
 	Registrar=document.getElementById('Registrar');
 	Login=document.getElementById('IniciarSesion');
@@ -189,6 +191,14 @@ function asignarEventos()
    {
    		ejercicios[i].addEventListener("click",pantallaEjercicios);
    }
+   for (var i = 0; i < ejercicios.length; i++)
+   {
+   		ejercicios[i].addEventListener("click",pantallaEjercicios);
+   }
+   for (var i = 0; i < checkejercicio.length; i++)
+   {
+   		checkejercicio[i].addEventListener("click",guardarProgreso);
+   }
 
 
    
@@ -212,6 +222,12 @@ function asignarEventos()
 
 }
 
+function guardarProgreso()
+{
+	usu[0].retos.numRetos++;
+	usuarios[index]=usu[0];
+	localStorage.setItem("Usuarios", JSON.stringify(usuarios));
+}
 
 function Registrarse()
 {
@@ -437,10 +453,6 @@ function CronometroRutina()
 	
 }
 
-function Cronometro()
-{
-
-}
 
 
 function correrejercicios(ejercicios)
