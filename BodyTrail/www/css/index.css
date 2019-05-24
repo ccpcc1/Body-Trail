@@ -516,6 +516,28 @@
     
 }
 
+#perfilTEntrenamiento
+{
+    position: absolute;
+    left: 80px;
+    top: 384px;
+    z-index: 4;
+    font-size: 19px;
+    background: white;
+    font-family: JosefinSans;
+}
+
+#PerfilNumlogros
+{
+    position: absolute;
+    left: 152px;
+    top: 431px;
+    z-index: 4;
+    font-size: 19px;
+    background: white;
+    font-family: JosefinSans
+}
+
 #bntAtrasPerfil
 {
     position: absolute;

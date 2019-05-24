@@ -346,7 +346,7 @@ function agregarARutina(rutina)
 		$("#RutinaDivEjer").empty();
 		isrutina=true;
 		lightbox.className="";
-		setTimeout(()=>{lightbox.className="ocultar"},1000);
+		setTimeout(()=>{lightbox.className="ocultar"},3000);
 		
 
 }
@@ -681,6 +681,49 @@ function resetGifs()
 	}
 }
 
+function CargarProgreso()
+{
+	var tiempo_Entrenamiento= Number(usu[0].retos.numRetos)*40; //cada reto ó ejercicio tiene 40 seg
+	var horas = Math.floor(tiempo_Entrenamiento/3600); 
+    var minutos = Math.floor(tiempo_Entrenamiento % 3600/60); 
+    var segundos = Math.floor(tiempo_Entrenamiento % 3600 % 60);
+    horas = horas<10? horas+"0" : horas;
+    minutos = minutos<10? minutos+"0" : minutos;
+    segundos = segundos<10? segundos+"0" : segundos;
+
+
+    document.getElementById('perfilTEntrenamiento').innerText=horas+" : "+minutos+" : "+segundos+" horas"; 
+
+
+}
+
+function CalcularLogros()
+{
+	var txtLogros=document.getElementById('PerfilNumlogros')
+	var num_retos= Number(usu[0].retos.numRetos);
+	var logros;
+	if (num_retos==0)
+	{
+		txtLogros.innerText=0;
+	}
+	if(num_retos>10)
+	{
+		txtLogros.innerText=1;		
+	}
+	if(num_retos>15)
+	{
+		txtLogros.innerText=2;		
+	}
+	if(num_retos>25)
+	{
+		txtLogros.innerText=3;		
+	}
+	if(num_retos>35)
+	{
+		txtLogros.innerText=4;		
+	}
+}
+
 //Seccion de pantallas
 
 function PantallaIniciarSesion()
@@ -808,6 +851,8 @@ function PantallaActividad()
 
 function pantallaPerfiles()
 {
+	CargarProgreso();
+	CalcularLogros();
 	PantallaBienvenida.className="ocultar";
 	PantallaRegistro.className="ocultar";
 	PantallaLoguin.className="ocultar";
