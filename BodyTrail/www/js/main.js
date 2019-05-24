@@ -345,9 +345,9 @@ function agregarARutina(rutina)
 	
 		usuarios[index]=usu[0];
 		localStorage.setItem("Usuarios", JSON.stringify(usuarios));
-	
-	
-	
+		$("#RutinaDivEjer").empty();
+		isrutina=true;
+
 }
 
 function ValidarRetoMes()
