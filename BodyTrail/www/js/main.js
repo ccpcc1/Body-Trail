@@ -338,6 +338,7 @@ function agregarARutina(rutina)
 			usuario.pass=usu[0].pass;
 			usuario.rutina=[];
 			usuario.rutina.push(rutina);
+			usuario.retos=usu[0].retos;
 			usu[0]=usuario;	
 		}
 	
@@ -687,40 +688,52 @@ function CargarProgreso()
 	var horas = Math.floor(tiempo_Entrenamiento/3600); 
     var minutos = Math.floor(tiempo_Entrenamiento % 3600/60); 
     var segundos = Math.floor(tiempo_Entrenamiento % 3600 % 60);
-    horas = horas<10? horas+"0" : horas;
-    minutos = minutos<10? minutos+"0" : minutos;
-    segundos = segundos<10? segundos+"0" : segundos;
+    horas = horas<10? "0"+horas : horas;
+    minutos = minutos<10? "0"+minutos : minutos;
+    segundos = segundos<10? "0"+segundos : segundos;
 
 
-    document.getElementById('perfilTEntrenamiento').innerText=horas+" : "+minutos+" : "+segundos+" horas"; 
+    document.getElementById('perfilTEntrenamiento').innerText=horas+" : "+minutos+" : "+segundos+" horas";
+    document.getElementById('estadisticaTiempo').innerText=horas+":"+minutos+":"+segundos+" horas";  
 
 
 }
 
 function CalcularLogros()
 {
-	var txtLogros=document.getElementById('PerfilNumlogros')
+	var txtPerfLogros=document.getElementById('PerfilNumlogros');
+	var txtEstLogros=document.getElementById('estadisticaRetos');
 	var num_retos= Number(usu[0].retos.numRetos);
 	var logros;
 	if (num_retos==0)
 	{
-		txtLogros.innerText=0;
+		txtPerfLogros.innerText=0;
+		txtEstLogros.innerText=0;
+
 	}
 	if(num_retos>10)
 	{
-		txtLogros.innerText=1;		
+		txtPerfLogros.innerText=1;
+		txtEstLogros.innerText=1;
+
 	}
 	if(num_retos>15)
 	{
-		txtLogros.innerText=2;		
+		txtPerfLogros.innerText=2;
+		txtEstLogros.innerText=2;
+
 	}
 	if(num_retos>25)
 	{
-		txtLogros.innerText=3;		
+		txtPerfLogros.innerText=3;
+		txtEstLogros.innerText=3;
+
 	}
 	if(num_retos>35)
 	{
-		txtLogros.innerText=4;		
+		txtPerfLogros.innerText=4;
+		txtEstLogros.innerText=4;
+
 	}
 }
 
@@ -829,6 +842,8 @@ function pantallaEvento()
 
 function PantallaActividad()
 {
+	CargarProgreso();
+	CalcularLogros();
 	PantallaBienvenida.className="ocultar";
 	PantallaRegistro.className="ocultar";
 	PantallaLoguin.className="ocultar";

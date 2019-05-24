@@ -320,91 +320,6 @@
     max-width: 200px;
 }
 
-/*Pantalla registro 2*/
-
-#logoregistro2
-{
-    position: absolute;
-    top: 28px;
-    left: 130px;
-    max-width: 332px; 
-}
-
-#tituloRegistro2
-{
-    position: absolute;
-    top: 115px;
-    left: 44px;
-    max-width: 240px;
-}
-#textoRegistro2
-{
-    position: absolute;
-    top: 151px;
-    left: 44px;
-    max-width: 230px;
-}
-
-#GeneroRegistro2
-{
-    position: absolute;
-    top: 195px;
-    left: 89px;
-    max-width: 147px;
-}
-
-#MasculinoRegistro2
-{
-    position: absolute;
-    top: 238px;
-    left: 0px;
-    max-width: 160px;
-}
-
-#femeninoRegistro2
-{
-    position: absolute;
-    top: 238px;
-    left: 170px;
-    max-width: 160px;
-}
-
-#EstaturaRegistro2
-{
-    position: absolute;
-    left: 79px;
-    max-width: 160px;
-    top: 297px;
-}
-#txtEstaturaRegistro2
-{
-    position: absolute;
-    left: 79px;
-    max-width: 160px;
-    top: 340px;
-    background: #656565;
-    border: none; 
-}
-
-#PesoRegistro
-{
-    position: absolute;
-    top: 400px;
-    left: 110px;
-    max-width: 100px;
-}
-
-#txtPesoRegistro2
-{
-    position: absolute;
-    top: 439px;
-    left: 79px;
-    max-width: 160px;
-    background: #656565;
-    border: none; 
-
-    
-}
 /*Pantalla creditos*/
 #banner
 {
@@ -453,6 +368,29 @@
     top: 0px;
     left: 0px;
     max-width: 320px;
+}
+
+#estadisticaTiempo
+{
+    position: absolute;
+    left: 169px;
+    top: 184px;
+    z-index: 4;
+    font-size: 13px;
+    background: white;
+    font-family: JosefinSans
+}
+
+#estadisticaRetos
+{
+    position: absolute;
+    left: 146px;
+    top: 184px;
+    z-index: 4;
+    font-size: 13px;
+    background: white;
+    font-family: JosefinSans;
+
 }
 
 #EstadisticasEstadisticas
@@ -551,41 +489,6 @@
 {
     position: absolute;
     top: 75px;
-    left: 12px;
-    max-width: 259px;
-
-
-}
-#ejerciciosDisponiblesFuerza
-{
-    position: absolute;
-    top: 168px;
-    left: 12px;
-    max-width: 259px;
-
-
-}
-#ejerciciosDisponiblesCardio
-{
-    position: absolute;
-    top: 75px;
-    left: 12px;
-    max-width: 259px;
-
-
-}
-#ejerciciosDisponiblesSinImplementos
-{
-   position: absolute;
-    top: 355px;
-    left: 12px;
-    max-width: 259px;
-
-}
-#ejerciciosDisponiblesPierna
-{
-    position: absolute;
-    top: 261px;
     left: 12px;
     max-width: 259px;
 
