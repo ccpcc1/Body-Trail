@@ -13,7 +13,6 @@ var pantallaInicio="";
 var splash="";
 var Registrar="";
 var Login="";
-var PantallaAplicacion="";
 var PantallaBienvenida="";
 var PantallaRegistro="";
 var PantallaLoguin="";
@@ -71,20 +70,17 @@ function plash()
 {
 	pantallaInicio.className="ocultar";
 	PantallaBienvenida.className="pantallas animated rotateInDownRight";
-	PantallaAplicacion.className="ocultar";
 	PantallaRegistro.className="ocultar";
 	PantallaLoguin.className="ocultar";
 	pantallaInicio.className="ocultar";
 	PantallaPrincipal.className="ocultar";
-	PantallaCreditos.className="ocultar";
-	
+	PantallaCreditos.className="ocultar";	
 	splash.className="ocultar";
 }
 
 function inicializar()
 {
 	pantallaInicio=document.getElementById('PantallaInicial');
-	PantallaAplicacion=document.getElementById('PantallaAplicacion');
 	PantallaBienvenida=document.getElementById('PantallaBienvenido');
 	PantallaRegistro=document.getElementById('PantallaRegistro');
 	PantallaLoguin=document.getElementById('PantallaLoguin');
@@ -119,6 +115,7 @@ function inicializar()
 	btnPierna=document.getElementById('EjerPierna');
 	btnCardio=document.getElementById('EjerCardio');
 	btnFuerza=document.getElementById('EjerFuerza');
+	lightbox=document.getElementById("lightbox");
 	atras=document.getElementsByClassName('atras');
 	btnEventos=document.getElementsByClassName('btnEventos');
 	btnPrincipal=document.getElementsByClassName('principio');
@@ -140,8 +137,6 @@ function inicializar()
 	cronoSinimp=document.getElementsByClassName('lblSinimp');
 	cronoCardio=document.getElementsByClassName('lblCardio');
 	cronoPierna=document.getElementsByClassName('lblPierna');
-	principalpantalla.className="ocultar";
-	persona.className="ocultar";
 	$('#barraCarga').jQMeter({
     goal:'$1,000',
     raised:'$1,000',
@@ -268,7 +263,8 @@ function Registrarse()
 				usuarios.push(Usuario);
 				localStorage.setItem("Usuarios", JSON.stringify(usuarios));
 				alert("Usuario registrado con exito");
-				PantallaIniciarSesion();    
+				PantallaIniciarSesion();
+				//PantallaInicio();    
 				
 			}
 			
@@ -304,6 +300,7 @@ function Loguin()
     					}
 				}
 				pantallaPrincipal();
+				
 			}
 			else
 			{
@@ -686,7 +683,6 @@ function PantallaIniciarSesion()
 {
 	pantallaInicio.className="ocultar";
 	PantallaBienvenida.className="ocultar";
-	PantallaAplicacion.className="ocultar";
 	PantallaRegistro.className="ocultar";
 	PantallaLoguin.className="pantallas";
 	PantallaPrincipal.className="ocultar";
@@ -699,7 +695,6 @@ function PantallaInicio()
 {
 	pantallaInicio.className="pantallas";
 	PantallaBienvenida.className="ocultar";
-	PantallaAplicacion.className="ocultar";
 	PantallaRegistro.className="ocultar";
 	PantallaLoguin.className="ocultar";
 	PantallaPrincipal.className="ocultar";
@@ -711,7 +706,6 @@ function PantallaRegistrarse()
 {
 	pantallaInicio.className="ocultar";
 	PantallaBienvenida.className="ocultar";
-	PantallaAplicacion.className="ocultar";
 	PantallaRegistro.className="pantallas";
 	PantallaLoguin.className="ocultar";
 	PantallaPrincipal.className="ocultar";
@@ -725,7 +719,6 @@ function pantallaPrincipal()
 {
 	pantallaInicio.className="ocultar";
 	PantallaBienvenida.className="ocultar";
-	PantallaAplicacion.className="ocultar";
 	PantallaRegistro.className="ocultar";
 	PantallaLoguin.className="ocultar";
 	PantallaCreditos.className="ocultar";
@@ -754,7 +747,6 @@ function pantallaPrincipal()
 function IrACreditos()
 {
 	PantallaBienvenida.className="ocultar";
-	PantallaAplicacion.className="ocultar";
 	PantallaRegistro.className="ocultar";
 	PantallaLoguin.className="ocultar";
 	PantallaPrincipal.className="ocultar";
@@ -766,7 +758,6 @@ function IrACreditos()
 function pantallaEvento()
 {
 	PantallaBienvenida.className="ocultar";
-	PantallaAplicacion.className="ocultar";
 	PantallaRegistro.className="ocultar";
 	PantallaLoguin.className="ocultar";
 	PantallaPrincipal.className="ocultar";
@@ -792,7 +783,6 @@ function pantallaEvento()
 function PantallaActividad()
 {
 	PantallaBienvenida.className="ocultar";
-	PantallaAplicacion.className="ocultar";
 	PantallaRegistro.className="ocultar";
 	PantallaLoguin.className="ocultar";
 	PantallaPrincipal.className="ocultar";
@@ -815,7 +805,6 @@ function PantallaActividad()
 function pantallaPerfiles()
 {
 	PantallaBienvenida.className="ocultar";
-	PantallaAplicacion.className="ocultar";
 	PantallaRegistro.className="ocultar";
 	PantallaLoguin.className="ocultar";
 	PantallaPrincipal.className="ocultar";
@@ -835,7 +824,6 @@ function pantallaPerfiles()
 function PantallaEvento1()
 {
 	pantallaInicio.className='ocultar';
-	PantallaAplicacion.className='ocultar';
 	PantallaBienvenida.className='ocultar';
 	PantallaRegistro.className='ocultar';
 	PantallaLoguin.className='ocultar';
@@ -854,7 +842,6 @@ function PantallaEvento1()
 function PantallaEvento2()
 {
 	pantallaInicio.className='ocultar';
-	PantallaAplicacion.className='ocultar';
 	PantallaBienvenida.className='ocultar';
 	PantallaRegistro.className='ocultar';
 	PantallaLoguin.className='ocultar';
@@ -880,7 +867,6 @@ function PantallaEvento2()
 function PantallaEvento3()
 {
 	pantallaInicio.className='ocultar';
-	PantallaAplicacion.className='ocultar';
 	PantallaBienvenida.className='ocultar';
 	PantallaRegistro.className='ocultar';
 	PantallaLoguin.className='ocultar';
@@ -906,7 +892,6 @@ function PantallaEvento3()
 function PantallaEvento4()
 {
 	pantallaInicio.className='ocultar';
-	PantallaAplicacion.className='ocultar';
 	PantallaBienvenida.className='ocultar';
 	PantallaRegistro.className='ocultar';
 	PantallaLoguin.className='ocultar';
@@ -931,7 +916,6 @@ function PantallaEvento4()
 function pantallaEjercicios()
 {
 	pantallaInicio.className='ocultar';
-	PantallaAplicacion.className='ocultar';
 	PantallaBienvenida.className='ocultar';
 	PantallaRegistro.className='ocultar';
 	PantallaLoguin.className='ocultar';
@@ -956,7 +940,6 @@ function pantallaEjercicios()
 function pantallaFuerza()
 {
 	pantallaInicio.className='ocultar';
-	PantallaAplicacion.className='ocultar';
 	PantallaBienvenida.className='ocultar';
 	PantallaRegistro.className='ocultar';
 	PantallaLoguin.className='ocultar';
@@ -980,7 +963,6 @@ function pantallaFuerza()
 function pantallaAbd()
 {
 	pantallaInicio.className='ocultar';
-	PantallaAplicacion.className='ocultar';
 	PantallaBienvenida.className='ocultar';
 	PantallaRegistro.className='ocultar';
 	PantallaLoguin.className='ocultar';
@@ -1004,7 +986,6 @@ function pantallaAbd()
 function pantallaPierna()
 {
 	pantallaInicio.className='ocultar';
-	PantallaAplicacion.className='ocultar';
 	PantallaBienvenida.className='ocultar';
 	PantallaRegistro.className='ocultar';
 	PantallaLoguin.className='ocultar';
@@ -1028,7 +1009,6 @@ function pantallaPierna()
 function pantallaSinImpl()
 {
 	pantallaInicio.className='ocultar';
-	PantallaAplicacion.className='ocultar';
 	PantallaBienvenida.className='ocultar';
 	PantallaRegistro.className='ocultar';
 	PantallaLoguin.className='ocultar';
@@ -1052,7 +1032,6 @@ function pantallaSinImpl()
 function pantallaCardio()
 {
 	pantallaInicio.className='ocultar';
-	PantallaAplicacion.className='ocultar';
 	PantallaBienvenida.className='ocultar';
 	PantallaRegistro.className='ocultar';
 	PantallaLoguin.className='ocultar';

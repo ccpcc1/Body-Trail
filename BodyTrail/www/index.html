@@ -483,59 +483,16 @@
             <img src="img/Pantallas/principal/rutina.png" id="TextoRutina">
             <img src="img/Pantallas/rutina/descripcion.png" id="descripcionRutina">
             <div id="RutinaDivEjer"></div>
-        </section>
-
-        <div class="Aplicacion ocultar" id="PantallaAplicacion">
-            <div class="menu">
-                <button class="boton" type="button" onclick="perfilfuncion()">Perfil</button>
-                <button class="boton" type="button" onclick="eventosfuncion()">Eventos</button>
-            </div>
-
-            <section class="menuprincipal ocultar" id="principalpantalla">
-                <div class="rutinas">
-
-                    <button class="boton" type="button">Rutina</button>
-                    <button class="boton" type="button" onclick="ejerciciosfuncion()">Ejercicios</button>
-                
-                </div>
-
-                <div class="retodelmes ocultar">
-                    <p>Aqui va Reto del Mes</p>
-                </div>
-
-                <div class="progresodelusuario ocultar">
-                        <progress value="22" max="100"></progress>
-                </div>
-
-                <div class="menusecundario ocultar">
-                        <button class="boton" type="button">Estadisticas</button>
-                        <button class="boton" type="button">Inicio</button>
-                        <button class="boton" type="button">Comunidad</button>
-                </div>
-            </section>
-
-            <section class="pantalladeejercicios ocultar" id="ejercicios">
-                <div class="botonatras">
-                        <button class="boton" type="button">Atras</button>
-                </div>
-
-                <div class="Mensajederecomendacion ocultar">
-                    <p>Mensaje de recomendacion</p>
-                </div>
-                <div class="botonmusculo ocultar" >
-                    <button class="boton" type="button">Musculo1</button>
-                    <button class="boton" type="button">Musculo2</button>
-                    <button class="boton" type="button">Musculo3</button>
-                    <button class="boton" type="button">MusculoN</button>
-                </div>
-            </section>
             
-             
-            <section class="perfil ocultar" id="persona">
-                <p>Este es el perfil de usuario</p>
-            </section>
-
-        
+        </section>
+        <div id="lightbox" class="ocultar">
+                <div id="ventanaModal">  
+                    <h1>Mi rutina</h1>
+                        <p id="mensaje"> Ejercicio agregado por exito a Mi rutina
+                        </p> 
+         
+                </div>
+            </div>
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         
