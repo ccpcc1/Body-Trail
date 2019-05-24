@@ -1,5 +1,6 @@
 //funciones con inicial btn son para la navegacion de una ventana a otra;
 window.onload = inicio;
+var lightbox;
 var cronoFuerza="";
 var cronoAbd="";
 var cronoSinimp="";
@@ -344,6 +345,9 @@ function agregarARutina(rutina)
 		localStorage.setItem("Usuarios", JSON.stringify(usuarios));
 		$("#RutinaDivEjer").empty();
 		isrutina=true;
+		lightbox.className="";
+		setTimeout(()=>{lightbox.className="ocultar"},1000);
+		
 
 }
 

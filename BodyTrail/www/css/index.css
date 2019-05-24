@@ -940,15 +940,9 @@
 }
 
 #ventanaModal p{
-text-align: justify;
-color: white;
+text-align: center;
 }
 
-
-.mostrar
-{
-    display: block ;
-}
 /**/
 
 
