@@ -1,5 +1,6 @@
 //funciones con inicial btn son para la navegacion de una ventana a otra;
 window.onload = inicio;
+var volverinicio="";
 var lightbox;
 var cronoFuerza="";
 var cronoAbd="";
@@ -158,6 +159,9 @@ function asignarEventos()
    btnCreditos.addEventListener("click",IrACreditos);
    btnVolver.addEventListener("click",plash);
    document.getElementById('btnComenzarRutina').addEventListener("click",EjecutarEjercicio);
+   volverinicio=document.getElementsByClassName('pantPrincipal');
+
+  
    for (var i =0; i < atras.length; i++) 
    {
    		atras[i].addEventListener("click",pantallaPrincipal);    	
@@ -206,6 +210,11 @@ function asignarEventos()
    {
    		checkejercicio[i].addEventListener("click",guardarProgreso);
    }
+    for (var i = 0; i < volverinicio.length; i++)
+   {
+   		volverinicio[i].addEventListener("click",PantallaInicio);
+   }
+
    document.getElementById('btnComenzarAbdomen').addEventListener("click",cronometroAbdomen);
    document.getElementById('btnComenzarFuerza').addEventListener("click",cronometroFuerza);
    document.getElementById('btnComenzarSinImp').addEventListener("click",cronometroSinImp);

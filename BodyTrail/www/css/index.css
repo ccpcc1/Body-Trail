@@ -409,6 +409,118 @@
     max-width: 100px;
 }
 
+#EstadisticaSinPintar1
+{
+    position: absolute;
+    top: 246px;
+    left: 41px;
+    max-width: 53px;
+    z-index: 5;
+    background: white;
+}
+
+#EstadisticaSinPintar2
+{
+    position: absolute;
+    top: 246px;
+    left: 101px;
+    max-width: 53px;
+    z-index: 5;
+    background: white;
+}
+#EstadisticaSinPintar3
+{
+    position: absolute;
+    top: 246px;
+    left: 162px;
+    max-width: 53px;
+    z-index: 5;
+    background: white;
+    
+}
+#EstadisticaSinPintar4
+{
+    position: absolute;
+    top: 246px;
+    left: 222px;
+    max-width: 53px;
+    z-index: 5;
+    background: white;
+}
+#EstadisticaSinPintar5
+{
+    position: absolute;
+    top: 331px;
+    left: 41px;
+    max-width: 53px;
+    z-index: 5;
+    background: white;   
+}
+#EstadisticaSinPintar6
+{
+    position: absolute;
+    top: 331px;
+    left: 101px;
+    max-width: 53px;
+    z-index: 5;
+    background: white;
+}
+#EstadisticaSinPintar7
+{
+    position: absolute;
+    top: 331px;
+    left: 162px;
+    max-width: 53px;
+    z-index: 5;
+    background: white; 
+}
+#EstadisticaSinPintar8
+{
+    position: absolute;
+    top: 331px;
+    left: 222px;
+    max-width: 53px;
+    z-index: 5;
+    background: white;
+    
+}
+#EstadisticaSinPintar9
+{
+    position: absolute;
+    top: 413px;
+    left: 41px;
+    max-width: 53px;
+    z-index: 5;
+    background: white;  
+}
+#EstadisticaSinPintar10
+{
+    position: absolute;
+    top: 413px;
+    left: 101px;
+    max-width: 53px;
+    z-index: 5;
+    background: white; 
+    
+}
+#EstadisticaSinPintar11
+{
+    position: absolute;
+    top: 413px;
+    left: 162px;
+    max-width: 53px;
+    z-index: 5;
+    background: white;     
+}
+#EstadisticaSinPintar12
+{
+    position: absolute;
+    top: 413px;
+    left: 222px;
+    max-width: 53px;
+    z-index: 5;
+    background: white;     
+}
 #EstadisticasTitulo3
 {
     position: absolute;
