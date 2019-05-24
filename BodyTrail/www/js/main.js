@@ -1,5 +1,6 @@
 //funciones con inicial btn son para la navegacion de una ventana a otra;
 window.onload = inicio;
+var obtenerFuerza;
 var cronometrando=[];
 var contador=0;
 var tiempo=39;
@@ -52,7 +53,8 @@ var index=-1;
 var ejercioEnEspera="";
 var cronometrosRutina;
 var btnAddEjercicio="";
-var checkejercicio
+var checkejercicio="";
+var cronometrosEjercicios=[];//0 abdomen,1 Fuerza,2 cardio, 3 pierna, 4 sinImpl 
 
 function inicio()
 {
@@ -255,7 +257,7 @@ function Registrarse()
 			{
 				usuarios.push(Usuario);
 				localStorage.setItem("Usuarios", JSON.stringify(usuarios));
-				//alert("Usuario registrado con exito");
+				alert("Usuario registrado con exito");
 				PantallaIniciarSesion();    
 				
 			}
@@ -455,8 +457,28 @@ function CronometroRutina()
 
 
 
-function correrejercicios(ejercicios)
+
+
+function correrejercicios(i)
 {
+	switch(i)
+	{
+		case 1:
+		obtenerFuerza=document.getElementsByClassName('FuerzaGif');
+		for (var i =0;i<obtenerFuerza.length; i++) {
+			obtenerFuerza[i].className="FuerzaGif mostrargif";
+		}
+		//fuerza
+		case 2:
+		//adbomen
+		case 3:
+		//SinImpl
+		case 4:
+		//cardio
+		case 5:
+		//pierna
+
+	}
 
 }
 

@@ -5,6 +5,12 @@
    src: url(tipografia/Arista2.0Alternate.ttf);
 }
 
+@font-face
+{
+     font-family:JosefinSans;
+   src: url(tipografia/JosefinSans-BoldItalic.ttf);
+    
+}
 .ocultar{
     display: none;
 }
@@ -797,6 +803,39 @@
     z-index: 1;
 
 }
+
+.lblTiempo1
+{
+    position: absolute;
+    left: 177px;
+    top: 205px;
+    z-index: 4;
+    font-size: 23px;
+    font-family: JosefinSans;
+}
+
+.lblTiempo2
+{
+    position: absolute;
+    left: 210px;
+    top: 205px;
+    z-index: 4;
+    font-size: 23px;
+    font-family: JosefinSans;
+}
+.lblTiempo3
+{
+    position: absolute;
+    left: -73px;
+    top: -44px;
+    z-index: 4;
+    background: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 6px 1px;
+    font-family: Arista2;
+    color: black;   
+}
 /*pantalla rutina*/
 #descripcionRutina
 {
@@ -869,6 +908,7 @@
 .mostrargif
 {
     display: block;
+    z-index: 4!important;
 }
 
 .contenedorEjericicio
@@ -877,27 +917,7 @@
 
 }
 /**/
-.menu .boton{
-    background-color: #0645aa;
-    border: 1px solid blue;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 40px;
-    border-radius: 8px;
-}
 
-.menu .boton:not(:last-child) {
-    border-right: none; 
-}
-
-.menu .boton:hover {
-    background-color: #3474db;
-}
 
 
 
