@@ -1,6 +1,10 @@
 //funciones con inicial btn son para la navegacion de una ventana a otra;
 window.onload = inicio;
-var obtenerFuerza;
+var cronoFuerza="";
+var cronoAbd="";
+var cronoSinimp="";
+var cronoCardio="";
+var cronoPierna="";
 var cronometrando=[];
 var contador=0;
 var tiempo=39;
@@ -54,7 +58,7 @@ var ejercioEnEspera="";
 var cronometrosRutina;
 var btnAddEjercicio="";
 var checkejercicio="";
-var cronometrosEjercicios=[];//0 abdomen,1 Fuerza,2 cardio, 3 pierna, 4 sinImpl 
+var cronometrosEjercicios=[];//1 abdomen,0 Fuerza,3 cardio, 4 pierna, 2 sinImpl 
 
 function inicio()
 {
@@ -131,6 +135,11 @@ function inicializar()
 	Registrar=document.getElementById('Registrar');
 	Login=document.getElementById('IniciarSesion');
 	ejercicios=document.getElementsByClassName('IrEjercicio');
+	cronoFuerza=document.getElementsByClassName('lblFuerza');
+	cronoAbd=document.getElementsByClassName('lblAbd');
+	cronoSinimp=document.getElementsByClassName('lblSinimp');
+	cronoCardio=document.getElementsByClassName('lblCardio');
+	cronoPierna=document.getElementsByClassName('lblPierna');
 	principalpantalla.className="ocultar";
 	persona.className="ocultar";
 	$('#barraCarga').jQMeter({
@@ -201,10 +210,11 @@ function asignarEventos()
    {
    		checkejercicio[i].addEventListener("click",guardarProgreso);
    }
-
-
-   
-
+   document.getElementById('btnComenzarAbdomen').addEventListener("click",cronometroAbdomen);
+   document.getElementById('btnComenzarFuerza').addEventListener("click",cronometroFuerza);
+   document.getElementById('btnComenzarSinImp').addEventListener("click",cronometroSinImp);
+   document.getElementById('btnComenzarCardio').addEventListener("click",cronometroCardio);   
+   document.getElementById('btnComenzarPierna').addEventListener("click",cronometroPierna);
    document.getElementById('inicioRapido').addEventListener("click",pantallaPrincipal);  
    btnEvento1.addEventListener("click",PantallaEvento1);
    btnEvento2.addEventListener("click",PantallaEvento2);
@@ -445,41 +455,229 @@ function CronometroRutina()
 					tiempo--;
 					CronometroRutina();
 				}
-				
-				
-			},1000);
-		
-		
-	}
 
-	
+			},1000);
+	}	
 }
 
 
 
-
-
-function correrejercicios(i)
+function cronometroFuerza()
 {
-	switch(i)
+	
+	var contFuerza=1;
+	var contFuerzaMin=0;
+	cronoFuerza[0].innerText=0;
+	var ejersFuerza=document.getElementsByClassName('FuerzaGif');
+	for (var i = 0; i <ejersFuerza.length;i++)
 	{
-		case 1:
-		obtenerFuerza=document.getElementsByClassName('FuerzaGif');
-		for (var i =0;i<obtenerFuerza.length; i++) {
-			obtenerFuerza[i].className="FuerzaGif mostrargif";
-		}
-		//fuerza
-		case 2:
-		//adbomen
-		case 3:
-		//SinImpl
-		case 4:
-		//cardio
-		case 5:
-		//pierna
+				ejersFuerza[i].className="ocultarGif FuerzaGif mostrarGifEjer";
+	}
+	cronometrosEjercicios.push(setInterval(function(){
 
+		if (contFuerza<=59)
+		{		
+			if (contFuerza<10)
+			{
+				cronoFuerza[1].innerText=": 0"+contFuerza;			
+			}
+			else
+			{
+				cronoFuerza[1].innerText=": "+contFuerza;
+			}
+			contFuerza++;			
+		}
+		else
+		{
+			contFuerzaMin++;
+			cronoFuerza[0].innerText=contFuerzaMin;
+			contFuerza=0;
+		}
+	}, 1000));
+}
+
+function cronometroAbdomen()
+{
+	
+	var contAbd=1;
+	var contAbdMin=0;
+	var ejersAbd=document.getElementsByClassName('abdomenGif');
+	for (var i = 0; i <ejersAbd.length;i++)
+	{
+				ejersAbd[i].className="ocultarGif abdomenGif mostrarGifEjer";
+	}
+	cronoAbd[0].innerText=0;
+	cronometrosEjercicios.push(setInterval(function(){
+
+		if (contAbd<=59)
+		{		
+			if (contAbd<10)
+			{
+				cronoAbd[1].innerText=": 0"+contAbd;			
+			}
+			else
+			{
+				cronoAbd[1].innerText=": "+contAbd;
+			}
+			contAbd++;			
+		}
+		else
+		{
+			contAbdMin++;
+			cronoAbd[0].innerText=contAbdMin;
+			contAbd=0;
+		}
+	}, 1000));
+}
+function cronometroSinImp()
+{
+	
+	var contSinimp=1;
+	var contSinimpMin=0;
+	var ejersSinImp=document.getElementsByClassName('SinImpGif');
+	for (var i = 0; i <ejersSinImp.length;i++)
+	{
+				ejersSinImp[i].className="ocultarGif SinImpGif mostrarGifEjer";
+	}
+	cronoSinimp[0].innerText=0;
+	cronometrosEjercicios.push(setInterval(function(){
+
+		if (contSinimp<=59)
+		{		
+			if (contSinimp<10)
+			{
+				cronoSinimp[1].innerText=": 0"+contSinimp;			
+			}
+			else
+			{
+				cronoSinimp[1].innerText=": "+contSinimp;
+			}
+			contSinimp++;			
+		}
+		else
+		{
+			contSinimpMin++;
+			cronoSinimp[0].innerText=contSinimpMin;
+			contSinimp=0;
+		}
+	}, 1000));
+}
+
+
+function cronometroCardio()
+{
+	
+	var contCardio=1;
+	var contCardioMin=0;
+	var ejerscardio=document.getElementsByClassName('cardioGif');
+	for (var i = 0; i <ejerscardio.length;i++)
+	{
+				ejerscardio[i].className="ocultarGif cardioGif mostrarGifEjer";
+	}
+	cronoCardio[0].innerText=0;
+	cronometrosEjercicios.push(setInterval(function(){
+
+		if (contCardio<=59)
+		{		
+			if (contCardio<10)
+			{
+				cronoCardio[1].innerText=": 0"+contCardio;			
+			}
+			else
+			{
+				cronoCardio[1].innerText=": "+contCardio;
+			}
+			contCardio++;			
+		}
+		else
+		{
+			contCardioMin++;
+			cronoCardio[0].innerText=contCardioMin;
+			contCardio=0;
+		}
+	}, 1000));
+}
+
+
+function cronometroPierna()
+{
+	
+	var contPierna=1;
+	var contPiernaMin=0;
+	var ejerspierna=document.getElementsByClassName('piernaGif');
+	for (var i = 0; i <ejerspierna.length;i++)
+	{
+				ejerspierna[i].className="ocultarGif piernaGif mostrarGifEjer";
+	}
+	cronoPierna[0].innerText=0;
+	cronometrosEjercicios.push(setInterval(function(){
+
+		if (contPierna<=59)
+		{		
+			if (contPierna<10)
+			{
+				cronoPierna[1].innerText=": 0"+contPierna;			
+			}
+			else
+			{
+				cronoPierna[1].innerText=": "+contPierna;
+			}
+			contPierna++;			
+		}
+		else
+		{
+			contPiernaMin++;
+			cronoPierna[0].innerText=contPiernaMin;
+			contPierna=0;
+		}
+	}, 1000));
+}
+
+function ResetEjericicios()
+{
+	resetGifs();
+	for (var i = 0; i<cronometrosEjercicios.length;i++)
+	{
+		clearTimeout(cronometrosEjercicios[i]);
 	}
 
+		 cronoFuerza[0].innerText='0';
+ 		 cronoAbd[0].innerText='0';
+		 cronoSinimp[0].innerText='0';
+		 cronoCardio[0].innerText='0';
+		 cronoPierna[0].innerText='0';
+		 cronoFuerza[1].innerText=': 00';
+ 		 cronoAbd[1].innerText=': 00';
+		 cronoSinimp[1].innerText=': 00';
+		 cronoCardio[1].innerText=': 00';
+		 cronoPierna[1].innerText=': 00';	
+}
+
+function resetGifs()
+{
+	var ejercicios=document.getElementsByClassName('ocultarGif');
+	for (var i = 0; i<ejercicios.length;i++)
+	{
+		if (i<6)
+		{
+			ejercicios[i].className="ocultarGif FuerzaGif";
+		}
+		if (i<12 && i>=6){
+			ejercicios[i].className="ocultarGif abdomenGif";			
+		}
+		if (i<18 && i>=12){
+			ejercicios[i].className="ocultarGif SinImpGif";
+
+		}
+		if (i<24 && i>=18){
+			ejercicios[i].className="ocultarGif cardioGif";
+			
+		}
+		if (i<30 && i>=24){
+			ejercicios[i].className="ocultarGif piernaGif";			
+			
+		}	
+	}
 }
 
 //Seccion de pantallas
@@ -549,7 +747,8 @@ function pantallaPrincipal()
 	PantallaCardio.className="ocultar";	
 	PantallaSinImp.className="ocultar";
 	PantallaEjercicio.className="ocultar";
-	PantallaMirutina.className="ocultar";			
+	PantallaMirutina.className="ocultar";
+	ResetEjericicios();			
 }
 
 function IrACreditos()
@@ -608,7 +807,8 @@ function PantallaActividad()
 	PantallaCardio.className="ocultar";	
 	PantallaSinImp.className="ocultar";
 	PantallaEjercicio.className="ocultar";
-	PantallaMirutina.className="ocultar";		
+	PantallaMirutina.className="ocultar";
+	ResetEjericicios();		
 
 }
 
@@ -750,7 +950,8 @@ function pantallaEjercicios()
 	PantallaCardio.className="ocultar";	
 	PantallaSinImp.className="ocultar";
 	PantallaEjercicio.className="Pantallas";
-	PantallaMirutina.className="ocultar";		
+	PantallaMirutina.className="ocultar";
+	ResetEjericicios();		
 }
 function pantallaFuerza()
 {

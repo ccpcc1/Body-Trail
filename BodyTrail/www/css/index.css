@@ -817,24 +817,11 @@
 .lblTiempo2
 {
     position: absolute;
-    left: 210px;
+    left: 204px;
     top: 205px;
     z-index: 4;
     font-size: 23px;
     font-family: JosefinSans;
-}
-.lblTiempo3
-{
-    position: absolute;
-    left: -73px;
-    top: -44px;
-    z-index: 4;
-    background: white;
-    font-weight: bold;
-    font-size: 14px;
-    padding: 6px 1px;
-    font-family: Arista2;
-    color: black;   
 }
 /*pantalla rutina*/
 #descripcionRutina
@@ -909,6 +896,11 @@
 {
     display: block;
     z-index: 4!important;
+}
+
+.mostrarGifEjer
+{
+     z-index: 4!important;
 }
 
 .contenedorEjericicio
