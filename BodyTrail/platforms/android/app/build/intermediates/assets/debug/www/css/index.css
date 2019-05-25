@@ -1,4 +1,16 @@
 /*codigo general*/
+@font-face
+{
+   font-family:Arista2;
+   src: url(tipografia/Arista2.0Alternate.ttf);
+}
+
+@font-face
+{
+     font-family:JosefinSans;
+   src: url(tipografia/JosefinSans-BoldItalic.ttf);
+    
+}
 .ocultar{
     display: none;
 }
@@ -113,6 +125,7 @@
     top: 9px;
     left: 280px;
     max-width: 25px;
+    z-index: 1;
 }
 
 #btnPerfil
@@ -121,6 +134,7 @@
     top: 9px;
     left: 9px;
     max-width: 25px;
+    z-index: 1;
 }
 
 #btnLogo
@@ -201,6 +215,7 @@
     top: 505px;
     left: 9px;
     max-width: 25px;
+    z-index: 1;
 }
 
 #btnPrincipal
@@ -308,91 +323,6 @@
     max-width: 200px;
 }
 
-/*Pantalla registro 2*/
-
-#logoregistro2
-{
-    position: absolute;
-    top: 28px;
-    left: 130px;
-    max-width: 332px; 
-}
-
-#tituloRegistro2
-{
-    position: absolute;
-    top: 115px;
-    left: 44px;
-    max-width: 240px;
-}
-#textoRegistro2
-{
-    position: absolute;
-    top: 151px;
-    left: 44px;
-    max-width: 230px;
-}
-
-#GeneroRegistro2
-{
-    position: absolute;
-    top: 195px;
-    left: 89px;
-    max-width: 147px;
-}
-
-#MasculinoRegistro2
-{
-    position: absolute;
-    top: 238px;
-    left: 0px;
-    max-width: 160px;
-}
-
-#femeninoRegistro2
-{
-    position: absolute;
-    top: 238px;
-    left: 170px;
-    max-width: 160px;
-}
-
-#EstaturaRegistro2
-{
-    position: absolute;
-    left: 79px;
-    max-width: 160px;
-    top: 297px;
-}
-#txtEstaturaRegistro2
-{
-    position: absolute;
-    left: 79px;
-    max-width: 160px;
-    top: 340px;
-    background: #656565;
-    border: none; 
-}
-
-#PesoRegistro
-{
-    position: absolute;
-    top: 400px;
-    left: 110px;
-    max-width: 100px;
-}
-
-#txtPesoRegistro2
-{
-    position: absolute;
-    top: 439px;
-    left: 79px;
-    max-width: 160px;
-    background: #656565;
-    border: none; 
-
-    
-}
 /*Pantalla creditos*/
 #banner
 {
@@ -443,6 +373,30 @@
     max-width: 320px;
 }
 
+#estadisticaTiempo
+{
+    position: absolute;
+    left: 169px;
+    top: 184px;
+    z-index: 4;
+    font-size: 13px;
+    background: white;
+    font-family: JosefinSans
+}
+
+#estadisticaRetos
+{
+    position: absolute;
+    left: 146px;
+    top: 184px;
+    z-index: 4;
+    font-size: 13px;
+    background: white;
+    font-family: JosefinSans;
+    min-width: 18px;
+
+}
+
 #EstadisticasEstadisticas
 {
     position: absolute;
@@ -459,6 +413,118 @@
     max-width: 100px;
 }
 
+#EstadisticaSinPintar1
+{
+    position: absolute;
+    top: 246px;
+    left: 41px;
+    max-width: 53px;
+    z-index: 5;
+    background: white;
+}
+
+#EstadisticaSinPintar2
+{
+    position: absolute;
+    top: 246px;
+    left: 101px;
+    max-width: 53px;
+    z-index: 5;
+    background: white;
+}
+#EstadisticaSinPintar3
+{
+    position: absolute;
+    top: 246px;
+    left: 162px;
+    max-width: 53px;
+    z-index: 5;
+    background: white;
+    
+}
+#EstadisticaSinPintar4
+{
+    position: absolute;
+    top: 246px;
+    left: 222px;
+    max-width: 53px;
+    z-index: 5;
+    background: white;
+}
+#EstadisticaSinPintar5
+{
+    position: absolute;
+    top: 331px;
+    left: 41px;
+    max-width: 53px;
+    z-index: 5;
+    background: white;   
+}
+#EstadisticaSinPintar6
+{
+    position: absolute;
+    top: 331px;
+    left: 101px;
+    max-width: 53px;
+    z-index: 5;
+    background: white;
+}
+#EstadisticaSinPintar7
+{
+    position: absolute;
+    top: 331px;
+    left: 162px;
+    max-width: 53px;
+    z-index: 5;
+    background: white; 
+}
+#EstadisticaSinPintar8
+{
+    position: absolute;
+    top: 331px;
+    left: 222px;
+    max-width: 53px;
+    z-index: 5;
+    background: white;
+    
+}
+#EstadisticaSinPintar9
+{
+    position: absolute;
+    top: 413px;
+    left: 41px;
+    max-width: 53px;
+    z-index: 5;
+    background: white;  
+}
+#EstadisticaSinPintar10
+{
+    position: absolute;
+    top: 413px;
+    left: 101px;
+    max-width: 53px;
+    z-index: 5;
+    background: white; 
+    
+}
+#EstadisticaSinPintar11
+{
+    position: absolute;
+    top: 413px;
+    left: 162px;
+    max-width: 53px;
+    z-index: 5;
+    background: white;     
+}
+#EstadisticaSinPintar12
+{
+    position: absolute;
+    top: 413px;
+    left: 222px;
+    max-width: 53px;
+    z-index: 5;
+    background: white;     
+}
 #EstadisticasTitulo3
 {
     position: absolute;
@@ -504,6 +570,28 @@
     
 }
 
+#perfilTEntrenamiento
+{
+    position: absolute;
+    left: 80px;
+    top: 384px;
+    z-index: 4;
+    font-size: 19px;
+    background: white;
+    font-family: JosefinSans;
+}
+
+#PerfilNumlogros
+{
+    position: absolute;
+    left: 152px;
+    top: 431px;
+    z-index: 4;
+    font-size: 19px;
+    background: white;
+    font-family: JosefinSans
+}
+
 #bntAtrasPerfil
 {
     position: absolute;
@@ -517,41 +605,6 @@
 {
     position: absolute;
     top: 75px;
-    left: 12px;
-    max-width: 259px;
-
-
-}
-#ejerciciosDisponiblesFuerza
-{
-    position: absolute;
-    top: 168px;
-    left: 12px;
-    max-width: 259px;
-
-
-}
-#ejerciciosDisponiblesCardio
-{
-    position: absolute;
-    top: 75px;
-    left: 12px;
-    max-width: 259px;
-
-
-}
-#ejerciciosDisponiblesSinImplementos
-{
-   position: absolute;
-    top: 355px;
-    left: 12px;
-    max-width: 259px;
-
-}
-#ejerciciosDisponiblesPierna
-{
-    position: absolute;
-    top: 261px;
     left: 12px;
     max-width: 259px;
 
@@ -755,6 +808,15 @@
     overflow: scroll;
     height: 172px;
 }
+.ocultarGif
+{
+    position: relative;
+    top: -122px;
+    left: -10px;
+    max-width: 200px;
+    z-index: -1;
+    background: white;
+}
 
 #itemEjercicio1
 {
@@ -767,52 +829,343 @@
 .itemCheck1
 {
     position: relative;
-    left: 197px;
+    left: 10px;
     max-width: 62px;
-    top: -88px;
+    top: -132px;
     z-index: 1;
+
 }
 .itembtnMas1
 {
     position: relative;
-    left: 212px;
-    max-width: 24px;
-    top: -88px;
+    left: 28px;
+    max-width: 28px;
+    top: -131px;
     z-index: 1;
-}
-/**/
-.menu .boton{
-    background-color: #0645aa;
-    border: 1px solid blue;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 40px;
-    border-radius: 8px;
+
 }
 
-.menu .boton:not(:last-child) {
-    border-right: none; 
-}
-
-.menu .boton:hover {
-    background-color: #3474db;
-}
-
-#seccionPrueba
+.lblTiempo1
 {
-    top: 100px;
     position: absolute;
-    max-height: 369px;
+    left: 177px;
+    top: 205px;
+    z-index: 4;
+    font-size: 23px;
+    font-family: JosefinSans;
+}
+
+.lblTiempo2
+{
+    position: absolute;
+    left: 204px;
+    top: 205px;
+    z-index: 4;
+    font-size: 23px;
+    font-family: JosefinSans;
+}
+/*pantalla rutina*/
+#descripcionRutina
+{
+    position: absolute;
+    left: 15px;
+    max-width: 302px;
+    top: 100px;
+}
+
+#btnComenzarRutina
+{
+    position: absolute;
+    left: 45px;
+    max-width: 229px;
+    top: 137px;
+}
+#RutinaDivEjer
+{
+    top: 171px;
+    position: absolute;
+    max-height: 316px;
+    overflow: scroll;
+    line-height: 0;
+    font-size: 0;
+}
+
+#imgGif
+{
+    position: relative;
+    left: 3px;
+    max-width: 320px;
+    top: -127px;
+    z-index: 1;
+    background: white;
+    font-size:0;
+
+}
+#imgejPng
+{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    max-width: 320px;
+    z-index: 1;
+    font-size:0;
+    border:none;
+    max-height: 127px;
+}
+
+.lblTiempoRutina
+{
+    max-width: 283px;
+    position: relative;
+    left: -73px;
+    top: -44px;
+    z-index: 4;
+    background: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 6px 2px;
+    font-family: Arista2;
+    color: black;
+}
+.arreglarlbl
+{
+    left: 245px !important;
+    top: -233px !important;
+}
+
+.mostrargif
+{
+    display: block;
+    z-index: 4!important;
+}
+
+.mostrarGifEjer
+{
+     z-index: 4!important;
+}
+
+.contenedorEjericicio
+{
+    max-height: 127px;
+
+}
+
+/*ventana model*/
+#lightbox
+{
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    top: 0px;
+    left: 0px;
+    font-size: 19px;
+    font-family: JosefinSans;
+}
+
+#ventanaModal{
+    width: 320px;
+    height: 173px;
+    background: white;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 171px;
+    text-align: center;
+    border-color: :green 3px;
+    border: 1px solid #93c01e;
+}
+
+#ventanaModal p{
+text-align: center;
+}
+
+/*Pantalla retos*/
+#btnRetoBuscar
+{
+   position: absolute;
+    top: 349px;
+    left: 54px;
+    max-width: 207px; 
+}
+/*Pantalla retos 2*/
+#descripcionRetos2
+{
+    position: absolute;
+    top: 157px;
+    left: 0px;
+    max-width: 320px;
+}
+#contenedorRetos2
+{
+    position: absolute;
+    top: 287px;
+    max-width: 320px;
+    max-height: 140px;
     overflow: scroll;
 }
-
-#imgprueba
+#descripcionp1Retos2
 {
-    max-width: 250px;
-    display: block;
+    position: relative;
+    top: 20px;
+    left: 114px;
+    max-width: 122px;
 }
+#descripcionp2Retos2
+{
+    position: relative;
+    top: -63px;
+    left: 189px;
+    max-width: 122px;
+}
+#descripcionp3Retos2
+{
+    position: relative;
+    top: -43px;
+    left: 189px;
+    max-width: 122px;
+}
+#imgRetos2
+{
+    position: relative;
+    top: -52px;
+    left: 4px;
+    max-width: 156px;
+    z-index: 1;
+}
+#img2Retos2
+{
+    position: relative;
+    top: -42px;
+    left: -122px;
+    max-width: 156px;
+    z-index: 1;
+}
+#img3Retos2
+{
+    position: relative;
+    top: -120px;
+    left: -2px;
+    max-width: 156px;
+    z-index: 1;
+}
+
+#paso1Retos2
+{
+    position: relative;
+    top: -16px;
+    left: 33px;
+    max-width: 57px;
+}
+
+#paso2Retos2
+{
+    position: relative;
+    top: 8px;
+    left: -136px;
+    max-width: 57px;
+}
+#paso3Retos2
+{
+    position: relative;
+    top: -80px;
+    left: -99px;
+    max-width: 57px;
+}
+#checkRetos2
+{
+    position: absolute;
+    left: 85px;
+    max-width: 52px;
+    top: 465px;
+    z-index: 1;
+}
+#changeRetos2
+{
+    position: absolute;
+    left: 167px;
+    max-width: 63px;
+    max-height: 28px;
+    top: 458px;
+    z-index: 1;
+}
+#infoRetos2
+{
+    position: absolute;
+    top: 423px;
+    left: 0px;
+    max-width: 320px;
+}
+
+
+/*Pantalla RetoDestacado1*/
+#imgRetoDestacado
+{
+    position: absolute;
+    top: 59px;
+    left: 16px;
+    max-width: 283px;
+}
+
+#texto1RetoDestacado
+{
+    position: absolute;
+    top: 238px;
+    left: 21px;
+    max-width: 267px;
+}
+
+#tituloRetoDestacado
+{
+    position: absolute;
+    top: 288px;
+    left: 0px;
+    max-width: 152px;
+}
+
+#texto2RetoDestacado
+{
+    position: absolute;
+    top: 326px;
+    left: 27px;
+    max-width: 242px;
+}
+
+#botonComRetoDestacado
+{
+    position: absolute;
+    top: 388px;
+    left: 54px;
+    max-width: 186px;
+}
+
+/*RetoDEstacado2*/
+
+#textoRetoDestacado2
+{
+    position: absolute;
+    top: 346px;
+    left: 50px;
+    max-width: 172px;
+}
+
+#tituloRetoDestacado2
+{
+    position: absolute;
+    top: 297px;
+    left: 82px;
+    max-width: 117px;
+}
+
+#ejercicioRetoDestacado2
+{
+    position: absolute;
+    top: 136px;
+    left: 0px;
+    max-width: 320px;
+}
+
+

@@ -15,6 +15,8 @@ var pantallaInicio="";
 var splash="";
 var Registrar="";
 var Login="";
+var irRetoDest1="";
+var irRetoDest2="";
 var PantallaBienvenida="";
 var PantallaRegistro="";
 var PantallaLoguin="";
@@ -30,7 +32,12 @@ var pantallaEvento3="";
 var pantallaEvento4="";
 var PantalllaEjercicios="";
 var PantallaMirutina="";
+var PantallaRetoDest1="";
+var PantallaRetoDes2="";
+var PantallaReto2="";
+var btnAtrasRetos="";
 var btncomenzar="";
+var btnRetoBuscar="";
 var btnVolver="";
 var btnRegistrarse="";
 var btnLoguin="";
@@ -61,7 +68,6 @@ var cronometrosRutina;
 var btnAddEjercicio="";
 var checkejercicio="";
 var cronometrosEjercicios=[];//1 abdomen,0 Fuerza,3 cardio, 4 pierna, 2 sinImpl 
-
 function inicio()
 {
 	inicializar();
@@ -83,10 +89,15 @@ function plash()
 
 function inicializar()
 {
+	irRetoDest1=document.getElementsByClassName('IrRetoDest1');
+	irRetoDest2=document.getElementById('botonComRetoDestacado');
+	btnAtrasRetos=document.getElementById('btnRetoBuscar');
 	pantallaInicio=document.getElementById('PantallaInicial');
 	PantallaBienvenida=document.getElementById('PantallaBienvenido');
 	PantallaRegistro=document.getElementById('PantallaRegistro');
 	PantallaLoguin=document.getElementById('PantallaLoguin');
+	PantallaRetoDest1=document.getElementById('PantallaRetoDestacado1');
+	PantallaRetoDes2=document.getElementById('PantallaRetoDestacado2');
 	PantallaPrincipal=document.getElementById('PantallaPrincipal');
 	PantallaCreditos=document.getElementById('Pantallacreditos');
 	PantallaEventos=document.getElementById('PantallaEventos');
@@ -100,19 +111,21 @@ function inicializar()
 	PantallaAbd=document.getElementById('PantallaAbdomen');
 	PantallaCardio=document.getElementById('PantallaCardio');
 	PantallaPierna=document.getElementById('PantallaPierna');
-	PantallaSinIMp=document.getElementById('PantallaSinImp');	
+	PantallaSinIMp=document.getElementById('PantallaSinImp');
+	PantallaReto2=document.getElementById('PantallaReto2');	
 	PantalllaEjercicios=document.getElementById('PantallaEjercicio');
 	PantallaMirutina=document.getElementById('PantallaRutina');
 	PantallaRetos=document.getElementById('PantallaReto');//aqui estaria la pantalla retos
 	btncomenzar=document.getElementById('BienvenidoComenzar');	
 	btnRegistrarse=document.getElementById('btnRegistrar');
+	btnRetoBuscar=document.getElementsByClassName('AtrasReto');	
 	btnEvento1=document.getElementById('EventosEvento1');
 	btnEvento2=document.getElementById('EventosEvento2');
 	btnEvento3=document.getElementById('EventosEvento3');
 	btnEvento4=document.getElementById('EventosEvento4');
 	btnCreditos= document.getElementById('acercaNosotros')
 	btnLoguin=document.getElementById('btnIniciar');
-	btnVolver=document.getElementById('btnAtras');
+	btnVolver=document.getElementsByClassName('volverInicioCreditos');
 	btnAbdomen=document.getElementById('EjerAbdomen');
 	btnSinImp=document.getElementById('EjerSinImplementos');
 	btnPierna=document.getElementById('EjerPierna');
@@ -125,6 +138,7 @@ function inicializar()
 	btnEstadisticas=document.getElementsByClassName('actividad');
 	btnAtrasEjercicios=document.getElementsByClassName('AtrasEjercicios');
 	btnAtrasEventos=document.getElementsByClassName('bntAtrasEvento');
+	volverinicio=document.getElementsByClassName('pantPrincipal');
 	btnRetos=document.getElementsByClassName('irRetos');
 	ejercioEnEspera=document.getElementsByClassName('ejercioEnEspera');
 	cronometrosRutina=document.getElementsByClassName('lblTiempoRutina');
@@ -159,11 +173,15 @@ function asignarEventos()
    btnLoguin.addEventListener("click",PantallaIniciarSesion);
    btnRegistrarse.addEventListener("click",PantallaRegistrarse);
    btnCreditos.addEventListener("click",IrACreditos);
-   btnVolver.addEventListener("click",plash);
+   btnVolver[0].addEventListener("click",plash);
+   btnRetoBuscar[0].addEventListener("click",pantallaRetos);
+   irRetoDest2.addEventListener("click",PantallaRetoDestacado2);
    document.getElementById('btnComenzarRutina').addEventListener("click",EjecutarEjercicio);
-   volverinicio=document.getElementsByClassName('pantPrincipal');
 
-
+	for (var i =0; i < irRetoDest1.length; i++) 
+   	{
+   		irRetoDest1[i].addEventListener("click",PantallaRetoDestacado1);    	
+   	}
   
    for (var i =0; i < atras.length; i++) 
    {
@@ -238,6 +256,7 @@ function asignarEventos()
    btnPierna.addEventListener("click",pantallaPierna);
    btnCardio.addEventListener("click",pantallaCardio);
    btnSinImp.addEventListener("click",pantallaSinImpl);
+   btnAtrasRetos.addEventListener("click",PantallaIrReto2);
 
 
 
@@ -879,6 +898,7 @@ function pantallaPrincipal()
 	PantallaEjercicio.className="ocultar";
 	PantallaMirutina.className="ocultar";
 	PantallaRetos.className='ocultar';
+	PantallaRetoDest1.className="ocultar";
 	ResetEjericicios();			
 }
 
@@ -1239,8 +1259,37 @@ function pantallaRetos()
 	PantallaEjercicio.className="ocultar";
 	PantallaMirutina.className="ocultar";
 	PantallaRetos.className='Pantallas';
+	PantallaReto2.className="ocultar";
 	ResetEjericicios();	
 }
+
+function PantallaIrReto2()
+{
+	PantallaRetos.className='ocultar';
+	PantallaReto2.className="Pantallas";
+	PantallaCardio.className="ocultar";	
+	PantallaSinImp.className="ocultar";
+	PantallaEjercicio.className="ocultar";
+	PantallaMirutina.className="ocultar";
+	PantallaRetos.className='ocultar';
+	ResetEjericicios();	
+}
+
+function PantallaRetoDestacado1()
+{
+	PantallaPrincipal.className='ocultar';
+	PantallaRetoDes2.className="ocultar";
+	PantallaRetoDest1.className="Pantallas";
+}
+
+function PantallaRetoDestacado2()
+{
+	PantallaPrincipal.className='ocultar';
+	PantallaRetoDes2.className="Pantallas";
+	PantallaRetoDest1.className="ocultar";
+}
+
+
 
 
 
