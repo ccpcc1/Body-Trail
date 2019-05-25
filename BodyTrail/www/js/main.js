@@ -962,7 +962,8 @@ function pantallaPerfiles()
 	PantallaCardio.className="ocultar";	
 	PantallaSinImp.className="ocultar";
 	PantallaEjercicio.className="ocultar";
-	PantallaMirutina.className="ocultar";		
+	PantallaMirutina.className="ocultar";
+	PantallaRetos.className='ocultar';		
 }
 
 function PantallaEvento1()
