@@ -1089,7 +1089,7 @@ text-align: center;
     left: 167px;
     max-width: 63px;
     max-height: 28px;
-    top: 458px;
+    top: 461px;
     z-index: 1;
 }
 #infoRetos2
@@ -1143,6 +1143,30 @@ text-align: center;
 }
 
 /*RetoDEstacado2*/
+
+#lblDia
+{
+    position: absolute;
+    top: 294px;
+    left: 159px;
+    font-family: JosefinSans;
+    font-size: 44px;
+    z-index: 1;
+    color: #93c01e;
+    background: white;
+    min-width: 44px;
+    max-height: 59px;
+    text-align: center;
+}
+
+#checkRetoDest
+{
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    max-width: 172px;
+}
+
 
 #textoRetoDestacado2
 {

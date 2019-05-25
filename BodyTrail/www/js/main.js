@@ -9,6 +9,7 @@ var cronoCardio="";
 var cronoPierna="";
 var cronometrando=[];
 var contador=0;
+var checkRetoDest="";
 var tiempo=39;
 var isrutina=true;
 var pantallaInicio="";
@@ -123,7 +124,8 @@ function inicializar()
 	btnEvento2=document.getElementById('EventosEvento2');
 	btnEvento3=document.getElementById('EventosEvento3');
 	btnEvento4=document.getElementById('EventosEvento4');
-	btnCreditos= document.getElementById('acercaNosotros')
+	btnCreditos= document.getElementById('acercaNosotros');
+	checkRetoDest=document.getElementById('checkRetoDest');
 	btnLoguin=document.getElementById('btnIniciar');
 	btnVolver=document.getElementsByClassName('volverInicioCreditos');
 	btnAbdomen=document.getElementById('EjerAbdomen');
@@ -257,6 +259,7 @@ function asignarEventos()
    btnCardio.addEventListener("click",pantallaCardio);
    btnSinImp.addEventListener("click",pantallaSinImpl);
    btnAtrasRetos.addEventListener("click",PantallaIrReto2);
+   checkRetoDest.addEventListener("click",checkRetoMes);
 
 
 
@@ -278,12 +281,12 @@ function Registrarse()
 	var correo=document.getElementById('CorreoRegistro').value;
 	var pass=document.getElementById('PassRegistro').value;
 	if (correo.length>0 && pass.length>0)
-	{						
+	{		var diaActual= new Date();				
 			var Usuario= new Object();
 			var retos= new Object();
 			retos.numRetos=0;
 			retos.RetoMesdiasCompletados=0;
-			retos.RetoMesFechaFin="";
+			retos.RetoMesFechaFin=diaActual.getMonth();
 			retos.RetoMesUltimoDia= new Date(2019,4,15)// se guarda el ultimo dia que se completo el reto
 			Usuario.correo=correo;
 			Usuario.pass=pass;
@@ -392,14 +395,42 @@ function ValidarRetoMes()
 {
 	var diaActual= new Date();
 	var ultimoDiaCheck=new Date(usu[0].retos.RetoMesUltimoDia);
-	if(ultimoDiaCheck<diaActual)
+	
+		if (ultimoDiaCheck.getDay()<diaActual.getDay() || ultimoDiaCheck.getMonth()<diaActual.getMonth())
+		{
+			document.getElementById('contRetoDest').className="";
+			console.log("se sube la var de diascompletadosMes");
+		}
+		else
+		{
+			document.getElementById('contRetoDest').className="ocultar";
+			console.log("no se muestra reto del mes");
+		}
+		
+}
+
+function checkRetoMes()
+{
+	diaActual = new Date();
+	usu[0].retos.RetoMesUltimoDia=diaActual;
+	usu[0].retos.RetoMesdiasCompletados++;
+	usuarios[index]=usu[0];
+	localStorage.setItem("Usuarios", JSON.stringify(usuarios));
+	pantallaPrincipal();
+}
+
+function CargarRetoMes()
+{
+	diaActual=new Date();
+	if (usu[0].retos.RetoMesFechaFin!=diaActual.getMonth())
 	{
-		console.log("se sube la var de diascompletadosMes");
+		usu[0].retos.numRetos++;
+		usu[0].retos.RetoMesFechaFin=diaActual.getMonth();
+		usu[0].retos.RetoMesdiasCompletados=0;
+		usuarios[index]=usu[0];
+		localStorage.setItem("Usuarios", JSON.stringify(usuarios));
 	}
-	else
-	{
-		console.log("no se muestra reto del mes");
-	}
+	document.getElementById('lblDia').innerText=usu[0].retos.RetoMesdiasCompletados;
 }
 
 function PintarRutina()
@@ -856,6 +887,7 @@ function PantallaInicio()
 	PantallaPrincipal.className="ocultar";
 	PantallaCreditos.className="ocultar";
 	PantallaPerfil.className="ocultar";
+
 }
 
 function PantallaRegistrarse()
@@ -899,6 +931,8 @@ function pantallaPrincipal()
 	PantallaMirutina.className="ocultar";
 	PantallaRetos.className='ocultar';
 	PantallaRetoDest1.className="ocultar";
+	PantallaRetoDes2.className="ocultar";
+	ValidarRetoMes();
 	ResetEjericicios();			
 }
 
@@ -1284,6 +1318,7 @@ function PantallaRetoDestacado1()
 
 function PantallaRetoDestacado2()
 {
+	CargarRetoMes();
 	PantallaPrincipal.className='ocultar';
 	PantallaRetoDes2.className="Pantallas";
 	PantallaRetoDest1.className="ocultar";
