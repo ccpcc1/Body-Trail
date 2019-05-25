@@ -1033,6 +1033,30 @@ text-align: center;
     max-width: 186px;
 }
 
+/*RetoDEstacado2*/
 
+#textoRetoDestacado
+{
+    position: absolute;
+    top: 346px;
+    left: 50px;
+    max-width: 172px;
+}
+
+#tituloRetoDestacado
+{
+    position: absolute;
+    top: 297px;
+    left: 82px;
+    max-width: 117px;
+}
+
+#ejercicioRetoDestacado
+{
+    position: absolute;
+    top: 136px;
+    left: 0px;
+    max-width: 320px;
+}
 
 
