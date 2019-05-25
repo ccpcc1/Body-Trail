@@ -2,6 +2,7 @@
 window.onload = inicio;
 var volverinicio="";
 var lightbox;
+var lightbox2;
 var cronoFuerza="";
 var cronoAbd="";
 var cronoSinimp="";
@@ -9,7 +10,9 @@ var cronoCardio="";
 var cronoPierna="";
 var cronometrando=[];
 var contador=0;
+var audioElement;
 var checkRetoDest="";
+var checkREtos2="";
 var tiempo=39;
 var isrutina=true;
 var pantallaInicio="";
@@ -78,6 +81,9 @@ function inicio()
 
 function plash()
 {
+	audioElement=document.createElement('audio');
+	audioElement.setAttribute('src', 'audio/audio.mp3'); 
+    audioElement.setAttribute('loop','loop');
 	pantallaInicio.className="ocultar";
 	PantallaBienvenida.className="pantallas animated rotateInDownRight";
 	PantallaRegistro.className="ocultar";
@@ -119,6 +125,7 @@ function inicializar()
 	PantallaRetos=document.getElementById('PantallaReto');//aqui estaria la pantalla retos
 	btncomenzar=document.getElementById('BienvenidoComenzar');	
 	btnRegistrarse=document.getElementById('btnRegistrar');
+	checkREtos2=document.getElementById('checkRetos2');
 	btnRetoBuscar=document.getElementsByClassName('AtrasReto');	
 	btnEvento1=document.getElementById('EventosEvento1');
 	btnEvento2=document.getElementById('EventosEvento2');
@@ -134,6 +141,7 @@ function inicializar()
 	btnCardio=document.getElementById('EjerCardio');
 	btnFuerza=document.getElementById('EjerFuerza');
 	lightbox=document.getElementById("lightbox");
+	lightbox2=document.getElementById('lightbox2');
 	atras=document.getElementsByClassName('atras');
 	btnEventos=document.getElementsByClassName('btnEventos');
 	btnPrincipal=document.getElementsByClassName('principio');
@@ -166,6 +174,8 @@ function inicializar()
 	});
 
 }
+
+
 function asignarEventos()
 {
     
@@ -178,6 +188,7 @@ function asignarEventos()
    btnVolver[0].addEventListener("click",plash);
    btnRetoBuscar[0].addEventListener("click",pantallaRetos);
    irRetoDest2.addEventListener("click",PantallaRetoDestacado2);
+   checkREtos2.addEventListener("click",CheckRetosbt);
    document.getElementById('btnComenzarRutina').addEventListener("click",EjecutarEjercicio);
 
 	for (var i =0; i < irRetoDest1.length; i++) 
@@ -260,12 +271,6 @@ function asignarEventos()
    btnSinImp.addEventListener("click",pantallaSinImpl);
    btnAtrasRetos.addEventListener("click",PantallaIrReto2);
    checkRetoDest.addEventListener("click",checkRetoMes);
-
-
-
-
-
-
 
 }
 
@@ -416,6 +421,7 @@ function checkRetoMes()
 	usu[0].retos.RetoMesdiasCompletados++;
 	usuarios[index]=usu[0];
 	localStorage.setItem("Usuarios", JSON.stringify(usuarios));
+
 	pantallaPrincipal();
 }
 
@@ -473,6 +479,8 @@ function EjecutarEjercicio()
 {
 	if (contador<ejercioEnEspera.length) 
 	{
+		audioElement.pause();
+		audioElement.play()
 		setTimeout(function()
 			{
 
@@ -534,6 +542,8 @@ function CronometroRutina()
 function cronometroFuerza()
 {
 	
+	audioElement.play()
+	
 	var contFuerza=1;
 	var contFuerzaMin=0;
 	cronoFuerza[0].innerText=0;
@@ -567,7 +577,8 @@ function cronometroFuerza()
 
 function cronometroAbdomen()
 {
-	
+
+	audioElement.play()
 	var contAbd=1;
 	var contAbdMin=0;
 	var ejersAbd=document.getElementsByClassName('abdomenGif');
@@ -601,6 +612,7 @@ function cronometroAbdomen()
 function cronometroSinImp()
 {
 	
+	audioElement.play()
 	var contSinimp=1;
 	var contSinimpMin=0;
 	var ejersSinImp=document.getElementsByClassName('SinImpGif');
@@ -636,6 +648,7 @@ function cronometroSinImp()
 function cronometroCardio()
 {
 	
+	audioElement.play()
 	var contCardio=1;
 	var contCardioMin=0;
 	var ejerscardio=document.getElementsByClassName('cardioGif');
@@ -671,6 +684,7 @@ function cronometroCardio()
 function cronometroPierna()
 {
 	
+	audioElement.play()
 	var contPierna=1;
 	var contPiernaMin=0;
 	var ejerspierna=document.getElementsByClassName('piernaGif');
@@ -905,6 +919,7 @@ function PantallaRegistrarse()
 
 function pantallaPrincipal()
 {
+	audioElement.pause();
 	pantallaInicio.className="ocultar";
 	PantallaBienvenida.className="ocultar";
 	PantallaRegistro.className="ocultar";
@@ -932,6 +947,7 @@ function pantallaPrincipal()
 	PantallaRetos.className='ocultar';
 	PantallaRetoDest1.className="ocultar";
 	PantallaRetoDes2.className="ocultar";
+	PantallaReto2.className="ocultar";
 	ValidarRetoMes();
 	ResetEjericicios();			
 }
@@ -949,6 +965,7 @@ function IrACreditos()
 
 function pantallaEvento()
 {
+	audioElement.pause();
 	PantallaBienvenida.className="ocultar";
 	PantallaRegistro.className="ocultar";
 	PantallaLoguin.className="ocultar";
@@ -994,12 +1011,16 @@ function PantallaActividad()
 	PantallaEjercicio.className="ocultar";
 	PantallaMirutina.className="ocultar";
 	PantallaRetos.className='ocultar';
-	ResetEjericicios();		
+	PantallaReto2.className="ocultar";
+	ResetEjericicios();
+	audioElement.pause();
+		
 
 }
 
 function pantallaPerfiles()
 {
+	audioElement.pause();
 	CargarProgreso();
 	CalcularLogros();
 	PantallaBienvenida.className="ocultar";
@@ -1115,6 +1136,7 @@ function PantallaEvento4()
 
 function pantallaEjercicios()
 {
+	audioElement.pause();
 	pantallaInicio.className='ocultar';
 	PantallaBienvenida.className='ocultar';
 	PantallaRegistro.className='ocultar';
@@ -1272,6 +1294,7 @@ function Pantallarutina()
 
 function pantallaRetos()
 {
+	audioElement.pause();
 	pantallaInicio.className='ocultar';
 	PantallaBienvenida.className='ocultar';
 	PantallaRegistro.className='ocultar';
@@ -1323,6 +1346,16 @@ function PantallaRetoDestacado2()
 	PantallaRetoDes2.className="Pantallas";
 	PantallaRetoDest1.className="ocultar";
 }
+
+function CheckRetosbt()
+{
+	guardarProgreso();
+	lightbox2.className="";
+	setTimeout(()=>{lightbox2.className="ocultar"},2000);
+}
+
+
+
 
 
 

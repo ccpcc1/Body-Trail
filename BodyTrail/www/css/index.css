@@ -1167,6 +1167,15 @@ text-align: center;
     max-width: 172px;
 }
 
+#gifRetoDest2
+{
+    position: absolute;
+    top: 137px;
+    left: 0px;
+    z-index: 1;
+    background: white;
+}
+
 
 #textoRetoDestacado2
 {
@@ -1192,4 +1201,52 @@ text-align: center;
     max-width: 320px;
 }
 
+
+/*ventana modal 2*/
+#lightbox2
+{
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    top: 0px;
+    left: 0px;
+    font-size: 19px;
+    font-family: JosefinSans;
+}
+
+#ventanaModal2{
+    width: 320px;
+    height: 173px;
+    background: white;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 171px;
+    text-align: center;
+    border-color: :green 3px;
+    border: 1px solid #93c01e;
+}
+
+#ventanaModal2 p{
+    text-align: center;
+    color: #93c01e;
+    font-size: 33px;
+    margin-top: -15px;
+}
+#ventanaModal2 h1
+{
+    font-size: 26px;
+    margin: 24px 0px;
+}
+
+#equisModal2
+{
+    position: relative;
+    left: 134px;
+    max-width: 25px;
+}
 
