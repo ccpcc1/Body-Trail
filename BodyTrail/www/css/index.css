@@ -977,14 +977,20 @@
     text-align: center;
     border-color: :green 3px;
     border: 1px solid #93c01e;
-
 }
 
 #ventanaModal p{
 text-align: center;
 }
 
-/**/
+/*Pantalla retos*/
+#btnRetoBuscar
+{
+   position: absolute;
+    top: 349px;
+    left: 54px;
+    max-width: 207px; 
+}
 
 
 
