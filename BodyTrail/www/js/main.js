@@ -724,26 +724,86 @@ function CalcularLogros()
 	{
 		txtPerfLogros.innerText=1;
 		txtEstLogros.innerText=1;
-
+		document.getElementById('EstadisticaSinPintar1').className="ocultar";
 	}
 	if(num_retos>15)
 	{
 		txtPerfLogros.innerText=2;
 		txtEstLogros.innerText=2;
+		document.getElementById('EstadisticaSinPintar2').className="ocultar";
 
 	}
 	if(num_retos>25)
 	{
 		txtPerfLogros.innerText=3;
 		txtEstLogros.innerText=3;
+		document.getElementById('EstadisticaSinPintar3').className="ocultar";
 
 	}
 	if(num_retos>35)
 	{
 		txtPerfLogros.innerText=4;
 		txtEstLogros.innerText=4;
+		document.getElementById('EstadisticaSinPintar4').className="ocultar";
 
 	}
+	if(num_retos>50)
+	{
+		txtPerfLogros.innerText=5;
+		txtEstLogros.innerText=5;
+		document.getElementById('EstadisticaSinPintar5').className="ocultar";
+
+	}
+	if(num_retos>60)
+	{
+		txtPerfLogros.innerText=6;
+		txtEstLogros.innerText=6;
+		document.getElementById('EstadisticaSinPintar6').className="ocultar";
+
+	}
+	if(num_retos>70)
+	{
+		txtPerfLogros.innerText=7;
+		txtEstLogros.innerText=7;
+		document.getElementById('EstadisticaSinPintar7').className="ocultar";
+
+	}
+	if(num_retos>75)
+	{
+		txtPerfLogros.innerText=8;
+		txtEstLogros.innerText=8;
+		document.getElementById('EstadisticaSinPintar8').className="ocultar";
+
+	}
+	if(num_retos>80)
+	{
+		txtPerfLogros.innerText=9;
+		txtEstLogros.innerText=9;
+		document.getElementById('EstadisticaSinPintar9').className="ocultar";
+
+	}
+	if(num_retos>85)
+	{
+		txtPerfLogros.innerText=10;
+		txtEstLogros.innerText=10;
+		document.getElementById('EstadisticaSinPintar10').className="ocultar";
+
+	}
+	if(num_retos>90)
+	{
+		txtPerfLogros.innerText=11;
+		txtEstLogros.innerText=11;
+		document.getElementById('EstadisticaSinPintar11').className="ocultar";
+
+	}
+	if(num_retos>100)
+	{
+		txtPerfLogros.innerText=12;
+		txtEstLogros.innerText=12;
+		document.getElementById('EstadisticaSinPintar12').className="ocultar";
+
+	}
+	
 }
 
 //Seccion de pantallas
