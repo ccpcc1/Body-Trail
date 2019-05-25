@@ -992,6 +992,46 @@ text-align: center;
     max-width: 207px; 
 }
 
+/*Pantalla RetoDestacado1*/
+#imgRetoDestacado
+{
+    position: absolute;
+    top: 59px;
+    left: 16px;
+    max-width: 283px;
+}
+
+#texto1RetoDestacado
+{
+    position: absolute;
+    top: 238px;
+    left: 21px;
+    max-width: 267px;
+}
+
+#tituloRetoDestacado
+{
+    position: absolute;
+    top: 288px;
+    left: 0px;
+    max-width: 152px;
+}
+
+#texto2RetoDestacado
+{
+    position: absolute;
+    top: 326px;
+    left: 27px;
+    max-width: 242px;
+}
+
+#botonComRetoDestacado
+{
+    position: absolute;
+    top: 388px;
+    left: 54px;
+    max-width: 186px;
+}
 
 
 
