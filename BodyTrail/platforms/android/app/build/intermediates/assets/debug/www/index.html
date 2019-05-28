@@ -7,7 +7,7 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width shrink-to-fit=no">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/main.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/animate.css">
         <title>BodyTrail</title>
@@ -20,7 +20,7 @@
         <div class="ocultar" id="PantallaInicial">
             <img src="img/Pantallas/inicio/logo.png" id="inicioLogo">
             <img src="img/Pantallas/inicio/fondo.png" id="img">
-            <img src="img/Pantallas/inicio/inicioRapido.png" id="inicioRapido">
+            <img src="img/Pantallas/inicio/InicioRapido.png" id="inicioRapido">
             <img src="img/Pantallas/inicio/Registrar.png" id="btnRegistrar">
             <img src="img/Pantallas/inicio/btnIniciar.png" id="btnIniciar">
             <img src="img/Pantallas/inicio/texto.png" id="mensajeInicio">
@@ -67,16 +67,18 @@
             <img src="img/Pantallas/principal/btnPerfil.png" class="btnPerfil" id="btnPerfil">
             <img src="img/Pantallas/principal/btnPrincipal.png" class="principio" id="btnPrincipal">
             <img src="img/Pantallas/principal/btnReto.png" class="irRetos" id="btnReto">
-            <img src="img/Pantallas/principal/ejercicios.png" class="IrEjercicio" id="textoEjercicio">           
-            <img src="img/Pantallas/principal/imgReto.png" id="imgReto">
+            <img src="img/Pantallas/principal/ejercicios.png" class="IrEjercicio" id="textoEjercicio">
+            <div id="contRetoDest">
+                <img src="img/Pantallas/principal/imgReto.png" id="imgReto" class="IrRetoDest1">
+                <img src="img/Pantallas/principal/textoReto.png" id="textoReto">
+            </div>           
             <img src="img/Pantallas/principal/lineaSeparacion.png" id="lineaSeparacion">
             <img src="img/Pantallas/principal/logo.png" id="btnLogo">
             <img src="img/Pantallas/principal/rutina.png" class="IrRutina" id="TextoRutina">
-            <img src="img/Pantallas/principal/textoReto.png" id="textoReto">
             <div id="seccionPrueba"></div>
         </section>
         <section id="Pantallacreditos" class="ocultar">
-               <img src="img/Pantallas/creditos/atras.png" id="btnAtras"> 
+               <img src="img/Pantallas/creditos/atras.png" id="btnAtras" class="volverInicioCreditos"> 
                <img src="img/Pantallas/creditos/banner.png" id="banner"> 
                <img src="img/Pantallas/creditos/contenido.png" id="contenido"> 
                
@@ -554,8 +556,8 @@
 
         <section id="PantallaRetoDestacado1" class="ocultar">
                 <img src="img/Pantallas/RetoDest/fondo.png" id="img">
-                <img src="img/Pantallas/RetoDest/equis.png"  id="btnEvento">
-                <img src="img/Pantallas/RetoDest/img.png" id="imgRetoDestacado">               
+                <img src="img/Pantallas/RetoDest/equis.png"  id="btnEvento" class="principio">
+                <img src="img/Pantallas/RetoDest/img.png" id="imgRetoDestacado">   
                 <img src="img/Pantallas/RetoDest/texto1.png" id="texto1RetoDestacado">
                 <img src="img/Pantallas/RetoDest/texto2.png" id="texto2RetoDestacado">
                 <img src="img/Pantallas/RetoDest/boton.png" id="botonComRetoDestacado">
@@ -564,16 +566,29 @@
 
         <section id="PantallaRetoDestacado2" class="ocultar">
                 <img src="img/Pantallas/RetoDest2/fondo.png" id="img">
-                <img src="img/Pantallas/RetoDest/equis.png"  id="btnEvento">
-                <img src="img/Pantallas/RetoDest2/encabezado.png" id="EventosBanner">               
-                <img src="img/Pantallas/RetoDest2/ejercicio.png" id="ejercicioRetoDestacado2">
+                <strong id="lblDia">1</strong>
+                <img src="img/Pantallas/RetoDest/equis.png"  id="btnEvento" class="IrRetoDest1">
+                <img src="img/Pantallas/RetoDest2/encabezado.png" id="EventosBanner">     
+                <img src="img/Pantallas/ejerciciosdisponibles/ejPierna5.png" id="ejercicioRetoDestacado2">
+                <img src="img/Pantallas/ejerciciosdisponibles/ejPierna5.gif" id="gifRetoDest2">          
                 <img src="img/Pantallas/RetoDest2/repeticiones.png" id="textoRetoDestacado2">
-                <img src="img/Pantallas/RetoDest2/titulo.png" id="tituloRetoDestacado2">         
+                <img src="img/Pantallas/RetoDest2/titulo.png" id="tituloRetoDestacado2">
+                <img src="img/Pantallas/ejercicio/abdomen/check.png" id="checkRetoDest" >        
         </section>
 
-        <script type="text/javascript" src="js/main.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        
+        </section>
+        <div id="lightbox2" class="ocultar">
+                <div id="ventanaModal2">
+                    <img src="img/Pantallas/retos/equis.png"  id="equisModal2">
+                    <h1>Haz completado el reto</h1>
+                        <p id="mensaje"> ¡Felicidades!
+                        </p> 
+         
+                </div>
+        </div>
+
+        <script type="text/javascript" src="js/main.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>    
         <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
         <script type="text/javascript" src="js/jqmeter.min.js"></script>
 
